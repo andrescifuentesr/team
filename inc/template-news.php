@@ -1,7 +1,7 @@
 <section class="block__sidebar">
 
 	<div class="block__apply">
-		<?php printf( __( '<a href="%1$s" class="bt_apply">Apply Now</a>.', 'team' ), esc_url( admin_url( 'post-new.php' ) ) ); ?>
+		<?php printf( __( '<a href="%1$s" class="bt_apply">Apply Now</a>', 'team' ), esc_url( admin_url( 'post-new.php' ) ) ); ?>
 	</div>
 
 	<div class="block__news">

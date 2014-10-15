@@ -12,9 +12,22 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'team' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'team' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'team' ), 'Team', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+
+			<div class="site-info__erasmus">
+				<img src="<?php bloginfo('template_directory'); ?>/img/logo-erasmus.svg"  alt="Logo Erasmus Mundus" />
+			</div><!--
+				  
+			--><div class="site-info__menu">
+				<?php get_template_part( 'inc/menu', 'footer' ); ?>
+				<p>
+					Mentions Légales - Design : Thomas La Blanc / Antoine Marinot -  Développment : Andres Cifuentes
+				</p>
+			</div><!--
+
+		--><div class="site-info__search">
+				<?php get_search_form(); ?>
+			</div>
+
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

@@ -1,59 +1,67 @@
 //========================================== Font Face
 @font-face {
-  font-family: 'Mohave';
-  src: url('../../fonts/Mohave.eot'); /* IE9 Compat Modes */
-  src: url('../../fonts/Mohave.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../../fonts/Mohave.woff') format('woff'), /* Modern Browsers */
-       url('../../fonts/Mohave.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../../fonts/Mohave.svg#3b03e6b824a93af237867d68dcecdeb9') format('svg'); /* Legacy iOS */
-       
-  font-style:   normal;
-  font-weight:  400;
-}
-
-@font-face {
-  font-family: 'Mohave';
-  src: url('../../fonts/Mohave-Bold.eot'); /* IE9 Compat Modes */
-  src: url('../../fonts/Mohave-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../../fonts/Mohave-Bold.woff') format('woff'), /* Modern Browsers */
-       url('../../fonts/Mohave-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../../fonts/Mohave-Bold.svg#478699ea99c9a4c3d27d5719feced985') format('svg'); /* Legacy iOS */
-       
-  font-style:   normal;
-  font-weight:  700;
-}
-
-@font-face {
-    font-family: 'aleobold';
-    src: url('../../fonts/Aleo-Bold-webfont.eot');
-    src: url('../../fonts/Aleo-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/Aleo-Bold-webfont.woff') format('woff'),
-         url('../../fonts/Aleo-Bold-webfont.ttf') format('truetype'),
-         url('../../fonts/Aleo-Bold-webfont.svg#aleobold') format('svg');
+    font-family: 'dosisregular';
+    src: url('../../fonts/dosis-regular-webfont.eot');
+    src: url('../../fonts/dosis-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/dosis-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/dosis-regular-webfont.woff') format('woff'),
+         url('../../fonts/dosis-regular-webfont.ttf') format('truetype'),
+         url('../../fonts/dosis-regular-webfont.svg#dosisregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
 @font-face {
-    font-family: 'aleoregular';
-    src: url('../../fonts/Aleo-Regular-webfont.eot');
-    src: url('../../fonts/Aleo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/Aleo-Regular-webfont.woff') format('woff'),
-         url('../../fonts/Aleo-Regular-webfont.ttf') format('truetype'),
-         url('../../fonts/Aleo-Regular-webfont.svg#aleoregular') format('svg');
+    font-family: 'ralewayregular';
+    src: url('../../fonts/raleway-regular-webfont.eot');
+    src: url('../../fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/raleway-regular-webfont.woff') format('woff'),
+         url('../../fonts/raleway-regular-webfont.ttf') format('truetype'),
+         url('../../fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
 @font-face {
-    font-family: 'aleoitalic';
-    src: url('../../fonts/Aleo-Italic-webfont.eot');
-    src: url('../../fonts/Aleo-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/Aleo-Italic-webfont.woff') format('woff'),
-         url('../../fonts/Aleo-Italic-webfont.ttf') format('truetype'),
-         url('../../fonts/Aleo-Italic-webfont.svg#aleoitalic') format('svg');
+    font-family: 'ralewaymedium';
+    src: url('../../fonts/raleway-medium-webfont.eot');
+    src: url('../../fonts/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('../../fonts/raleway-medium-webfont.woff') format('woff'),
+         url('../../fonts/raleway-medium-webfont.ttf') format('truetype'),
+         url('../../fonts/raleway-medium-webfont.svg#ralewaymedium') format('svg');
     font-weight: normal;
     font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../../fonts/raleway-light-webfont.eot');
+    src: url('../../fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('../../fonts/raleway-light-webfont.woff') format('woff'),
+         url('../../fonts/raleway-light-webfont.ttf') format('truetype'),
+         url('../../fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../../fonts/raleway-bold-webfont.eot');
+    src: url('../../fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/raleway-bold-webfont.woff') format('woff'),
+         url('../../fonts/raleway-bold-webfont.ttf') format('truetype'),
+         url('../../fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 

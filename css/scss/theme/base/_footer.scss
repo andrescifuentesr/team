@@ -1,14 +1,33 @@
-// .site-footer {
-// 	background: url('../../../img/background-header.jpg') repeat-x #fff;
-// 	width:100%;
+.site-footer {
+	width:100%;
+	border-top: 1px solid #b3b3b3;
 
-// 	p {
-// 		text-align:center;
-// 		color:#fff;
-// 		font-size: 0.75em;
-// 		margin: 0;
-// 		padding: 0.2em;
-// 	}
+	.site-info {
+		max-width:1400px;
+		margin:0 auto;
+	}
 
-// 	a {text-decoration:underline;}
-// }
+	.site-info__search,
+	.site-info__erasmus {
+		display:inline-block;
+		width: 25%;
+		vertical-align:middle;
+	}
+
+	.site-info__menu {
+		display:inline-block;
+		width: 50%;
+		vertical-align:middle;
+		text-align: center;
+
+		p {
+			color: #999999;
+			@include font-size( 10px );
+		}
+	}
+
+	.site-info__erasmus {
+		padding-left: 1em;
+	}
+
+}

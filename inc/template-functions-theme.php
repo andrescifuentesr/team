@@ -33,10 +33,10 @@
 /**
  * Register Socail Menu
  */
-add_action( 'init', 'social_register_nav_menus' );
+add_action( 'init', 'footer_register_nav_menus' );
 
-function social_register_nav_menus() {
-	register_nav_menu( 'social', __( 'Social', 'georgette' ) );
+function footer_register_nav_menus() {
+	register_nav_menu( 'footer', __( 'Footer Menu', 'georgette' ) );
 }
 
 

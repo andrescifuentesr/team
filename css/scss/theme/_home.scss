@@ -1,32 +1,39 @@
-//================
-//Home
+.content-area {
+	background: #dddddd;
+	text-align: center;
+}
 
-.block-home-bottom {
+.site-main {
 	position: relative;
-	margin-top: 2em;
+	padding: 3.5em 2em;
+	width: 100%;
+	min-height: 627px;
+	max-width:1400px;
+	margin: 0 auto;
 
-	img {
+	.block__central {
+		position:relative;
+		z-index: 10;
 		float: left;
-		margin-left: -6.6em;
-		margin-right: 1em;
-		margin-top: -1em;
-		@include mq(phone) {float:none; margin: 0 auto; display: block;}
+		width: 70%;
+		margin-right: 2.5%;
+		background: #fff;
 	}
 
-	p:first-of-type {
-		position: relative;
-		overflow: hidden;
-		padding-top: 2em;
+	.block__sidebar {
+		position:relative;
+		z-index: 10;
+		width: 27.5%;
+		float: left;
+	}
 
-		&::before{
-			content:"";
-			position: absolute;
-			height: 6px;
-			width: 100%;
-			top: 0;
-			border-top: 2px solid $red-principal;
-			border-bottom: 2px solid $red-principal;
-		}
+	.block__carte {
+		display: block;
+		margin: 0 auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
 	}
 
 }
