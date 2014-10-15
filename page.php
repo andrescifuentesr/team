@@ -13,23 +13,23 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main clearfix" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			<img src="<?php bloginfo('template_directory'); ?>/img/carte.svg"  alt="Logo Erasmus Mundus" class="block__carte" />
 
-				<?php get_template_part( 'content', 'page' ); ?>
+			<section class="block__central">
 
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php endwhile; // end of the loop. ?>
+					<?php get_template_part( 'content', 'page' ); ?>
+
+				<?php endwhile; // end of the loop. ?>
+
+			</section>
+
+			<?php get_template_part( 'inc/template', 'news' ); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

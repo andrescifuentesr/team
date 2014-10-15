@@ -7,9 +7,10 @@
 	<div class="block__news">
 		<h1 class="entry-title--news"><?php _e( 'News', 'team' ); ?></h1>
 		
-		<article>
+		<article class="block--article__news">
 			<header class="entry-header">
 				<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+				<span class="entry-date"><?php the_time('j/m/Y'); ?></span>
 			</header>
 			<div class="entry-content">
 				<?php the_content(); ?>
