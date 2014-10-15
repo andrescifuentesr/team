@@ -21,26 +21,26 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
+				<img src="<?php bloginfo('template_directory'); ?>/img/carte.svg"  alt="Logo Erasmus Mundus" class="block__carte" />
+
+				<section class="block__central">
+
+					<header class="entry-header">
+						<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+					</header>
+					<div class="entry-content">
+						<?php the_content(); ?>
+					</div>
+					
+				</section>
+
+				<?php get_template_part( 'inc/template', 'news' ); ?>
 
 			<?php endwhile; ?>
-
-			<?php team_paging_nav(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
