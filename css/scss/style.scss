@@ -16,7 +16,7 @@
 @import 'theme/base/menu_footer';
 @import 'theme/base/page';
 @import 'theme/base/loader';
-@import 'theme/base/news';
+@import 'theme/news';
 @import 'theme/home';
 
 
@@ -47,9 +47,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'ralewaymedium';
 }
 
-p {
-	font-size: 0.9em;
-}
 
 /* ========= Helperclass =========== */	
 

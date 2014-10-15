@@ -11,24 +11,13 @@
 //function shortcode
 //-------------------------------------------------
 
-// function border_green_shortcode_top( $atts ) {
-// 	return '<div class="border-green-top">&nbsp;</div>';
-// }
-// add_shortcode( 'border_green_top', 'border_green_shortcode_top' );
+function apply_now_shortcode( $atts, $content = null ) {
+	return '
+		<div class="block__apply block__apply--content"><a href="https://emecw.gis.lu.se/apply/?lot=TEAM" class="bt_apply" target="_blank">' . $content . '</a></div>';
+}
+add_shortcode( 'button_apply', 'apply_now_shortcode' );
+//[button_apply]
 
-// function border_green_shortcode_bottom( $atts ) {
-// 	return '<div class="border-green-bottom">&nbsp;</div>';
-// }
-// add_shortcode( 'border_green_bottom', 'border_green_shortcode_bottom' );
-
-// function google_maps_shortcode( $atts ) {
-// 	return '
-// 		<div class="map-wrapper">
-// 			<div id="map_canvas"></div>
-// 		</div>';
-// }
-// add_shortcode( 'google_maps', 'google_maps_shortcode' );
-//[google_maps]
 
 /**
  * Register Socail Menu
