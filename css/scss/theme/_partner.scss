@@ -1,0 +1,32 @@
+.block__partner {
+	border-bottom: 1px dotted #515151;
+	padding: 2em 0;
+	line-height: 1.4em;
+
+	.block__partner--image {
+		display: inline-block;
+		vertical-align: middle;
+		width: 35%;
+	}
+
+	.block__partner--texte {
+		display: inline-block;
+		vertical-align: middle;
+		width: 65%;
+
+		p {
+			color:#515151;
+			margin-bottom: 0.5em;
+			font-family: 'ralewaybold';
+			@include font-size( 18px );
+		}
+
+		span {
+			font-family: 'ralewaymedium';
+		}
+
+		a {
+			@include font-size( 14px );
+		}
+	}
+}

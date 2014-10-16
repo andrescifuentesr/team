@@ -42,6 +42,8 @@
 
 /* Media queries */
 
+/* Simple grid */
+
 /* TEXT SHADOW */
 
 /* Linear Gradient Stop 5% */
@@ -1826,12 +1828,8 @@ html[xmlns] .slides {
   font-size: 1.27778rem;
 }
 
-.page .site-main p,
-.page .site-main ul,
-.page .site-main ol,
-.single .site-main p,
-.single .site-main ul,
-.single .site-main ol {
+.page .site-main,
+.single .site-main {
   font-size: 0.7em;
 }
 
@@ -1849,7 +1847,7 @@ html[xmlns] .slides {
 
 .block__central .block__apply--content {
   display: inline-block;
-  width: 20em;
+  width: 28em;
   text-align: center;
 }
 
@@ -2097,6 +2095,72 @@ html[xmlns] .slides {
   top: 0;
   left: 0;
   z-index: 0;
+}
+
+.block__link--university {
+  border: 10px solid #f2f2f2;
+  vertical-align: middle;
+  text-align: center;
+  min-height: 120px;
+  margin-bottom: 1%;
+  width: 24.25%;
+  margin-right: 1%;
+  display: inline-block;
+}
+
+.block__link--university:nth-child(n) {
+  margin-right: 1%;
+}
+
+.block__link--university:nth-child(4n) {
+  margin-right: 0;
+}
+
+.block__link--university a {
+  display: block;
+}
+
+.block__link--university img {
+  display: block;
+  margin: 0 auto;
+  padding: 1em 1em;
+  max-height: 100px;
+  width: auto;
+}
+
+.block__partner {
+  border-bottom: 1px dotted #515151;
+  padding: 2em 0;
+  line-height: 1.4em;
+}
+
+.block__partner .block__partner--image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35%;
+}
+
+.block__partner .block__partner--texte {
+  display: inline-block;
+  vertical-align: middle;
+  width: 65%;
+}
+
+.block__partner .block__partner--texte p {
+  color: #515151;
+  margin-bottom: 0.5em;
+  font-family: 'ralewaybold';
+  font-size: 18px;
+  font-size: 1rem;
+}
+
+.block__partner .block__partner--texte span {
+  font-family: 'ralewaymedium';
+}
+
+.block__partner .block__partner--texte a {
+  font-size: 14px;
+  font-size: 0.77778rem;
 }
 
 *,

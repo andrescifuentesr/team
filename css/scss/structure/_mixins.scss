@@ -86,6 +86,25 @@
 }
 
 
+//=================================
+/* Simple grid */
+ 
+@mixin simple-grid($nombre-items , $margin-right ){
+    width: ( (100% - ( ($nombre-items - 1) * $margin-right) ) / $nombre-items); 
+    margin-right: $margin-right;
+    // float:left;
+    display: inline-block;
+    
+    &:nth-child(n) {
+      margin-right: $margin-right;
+    }
+ 
+    &:nth-child( #{$nombre-items}n) {
+      margin-right: 0;
+    }
+}
+
+
 //Set a rem font size with pixel fallback
 @function calculateRem($size) {
   $remSize: $size / 18px;
