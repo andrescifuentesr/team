@@ -1628,39 +1628,84 @@ html[xmlns] .slides {
   font-size: 1.27778rem;
 }
 
-.page .site-main p, .page .site-main ul, .page .site-main ol {
+.page .site-main p, .page .site-main ul, .page .site-main ol, .single .site-main p, .single .site-main ul, .single .site-main ol {
   font-size: 0.7em;
 }
-.page .block__central .entry-header {
+
+.block__central .entry-header {
   margin: 1.4em 0 0.8em;
 }
-.page .block__central .entry-title {
+.block__central .entry-title {
   border-bottom: 4px solid #29abe2;
   padding-bottom: 0.6em;
   margin: 0;
   font-size: 18px;
   font-size: 1rem;
 }
-.page .block__central .block__apply--content {
+.block__central .block__apply--content {
   display: inline-block;
   width: 20em;
   text-align: center;
 }
-.page .block__central .block__apply--content .bt_apply {
+.block__central .block__apply--content .bt_apply {
   display: block;
   padding: 0.5em 0;
   color: #fff;
   text-decoration: none;
 }
-.page .block__central h4 {
+.block__central h4 {
   padding-bottom: 0.5em;
   border-bottom: 1px dotted #000;
   font-size: 14px;
   font-size: 0.77778rem;
 }
-.page .block__central a {
+.block__central a {
   color: #29abe2;
   text-decoration: underline;
+}
+
+.single .block__central .entry-header {
+  margin: 1.4em 0 0.8em;
+  border-bottom: 4px solid #29abe2;
+  padding-bottom: 0.6em;
+  color: #515151;
+}
+.single .block__central .entry-title {
+  border-bottom: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'ralewayregular';
+  font-size: 16px;
+  font-size: 0.88889rem;
+}
+.single .block__central .entry-title--city {
+  text-transform: uppercase;
+  font-family: 'ralewaybold';
+  font-size: 18px;
+  font-size: 1rem;
+}
+.single .block__central .entry-title--country {
+  font-family: 'ralewaymedium';
+  font-size: 18px;
+  font-size: 1rem;
+}
+.single .block__central h4 {
+  margin: 0 0 1em;
+  color: #515151;
+  border-bottom: 1px dotted #515151;
+}
+.single .block__central .block__university--logo {
+  width: 40%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.single .block__central .block__university--logo img {
+  max-width: 40%;
+}
+.single .block__central .block__university--campus {
+  width: 60%;
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 .spinner {
