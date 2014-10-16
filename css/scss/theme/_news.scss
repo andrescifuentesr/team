@@ -1,3 +1,39 @@
+.block__central--news {
+
+	.entry-header__global {
+		text-transform: uppercase;
+		color: #515151;
+		margin-bottom: 2em;
+		@include font-size( 18px );
+	}
+
+	.entry-header {
+		margin:1.4em 0 0.8em;
+		border-bottom: 4px solid $color-principal;
+		padding-bottom: 0.6em;
+		color: #515151;
+		line-height: 1.2em;
+	}
+
+	.entry-title {
+		border-bottom: none;
+		margin: 0;
+		padding: 0;
+		font-family: 'ralewaymedium';			
+		@include font-size( 16px );
+	}
+
+	.entry-date {
+		@include font-size( 14px );
+	}
+
+	.entry-content {
+		margin: 0;
+	}
+
+}
+
+
 .block__sidebar {
 
 	.block__news {
@@ -8,15 +44,19 @@
 	}
 
 	.entry-title--news {
-		color:#353535;
 		padding-bottom: 0.25em;
 		border-bottom: 2px solid #fff;
 		text-transform: uppercase;
 		@include font-size( 18px );
+
+		a {
+			color:#353535;
+		}
 	}
 
 	.block--article__news {
 		line-height: 1em;
+		margin-bottom: 0.5em;
 
 		.entry-title {
 			margin-bottom: 0;
@@ -30,6 +70,11 @@
 
 		.entry-content {
 			margin: 0.5em 0 0;
+		}
+
+		.read-more {
+			color: #4d4d4d;
+			text-decoration: underline;
 		}
 	}
 

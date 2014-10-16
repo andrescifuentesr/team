@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package loulou
+ * @package Team
  */
 
 //-------------------------------------------------  
@@ -27,6 +27,24 @@ add_action( 'init', 'footer_register_nav_menus' );
 function footer_register_nav_menus() {
 	register_nav_menu( 'footer', __( 'Footer Menu', 'georgette' ) );
 }
+
+
+
+/**
+ * Remove [...] string using Filters
+ */
+
+function new_excerpt_more( $more ) {
+	return '... <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">Read More</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+//Control Excerpt Length using Filters
+function custom_excerpt_length( $length ) {
+	return 30;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 
 
 // //-------------------------------------------------  

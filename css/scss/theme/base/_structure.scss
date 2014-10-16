@@ -1,13 +1,13 @@
-.page, .single {
+// .page, .single, .home {
 
 	.site-main {
 
-		// p, ul, ol {
+		p, ul, ol {
 			font-size: 0.7em;
-		// }
+		}
 
 	}
-}
+// }
 
 .block__central {
 
@@ -24,7 +24,7 @@
 
 	.block__apply--content {
 		display: inline-block;
-		width: 28em;
+		width: 20em;
 		text-align: center;
 
 		.bt_apply {
