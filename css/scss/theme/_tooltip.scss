@@ -1,0 +1,33 @@
+.tooltipster-blue {
+	border-radius: 0px; 
+	border-top: 5px solid $color-principal;
+	background: #fff;
+	color: #515151;
+}
+.tooltipster-red {
+	border-radius: 0px; 
+	border-top: 5px solid #FF0000;
+	background: #fff;
+	color: #515151;
+}
+.tooltipster-content {
+	line-height: 16px;
+	padding: 8px 10px;
+	padding-bottom: 2em;
+	padding-right: 6em;
+	@include font-size( 13px );
+
+	.tool-university {
+		font-family: 'ralewaybold';
+		margin-bottom: 0;
+	}
+
+	.tool-city {
+		font-family: 'ralewaymedium';
+		text-transform: uppercase;
+	}
+
+	.tool-country {
+		font-family: 'ralewayregular';
+	}
+}

@@ -21,8 +21,10 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<img src="<?php bloginfo('template_directory'); ?>/img/carte.svg"  alt="Logo Erasmus Mundus" class="block__carte" />
+				<!-- <img src="<?php bloginfo('template_directory'); ?>/img/carte.svg"  alt="Logo Erasmus Mundus" class="block__carte" /> -->
 
+				<?php get_template_part('inc/inline', 'carte.svg'); ?>
+				
 				<section class="block__central">
 
 					<header class="entry-header">
