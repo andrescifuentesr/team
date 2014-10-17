@@ -47,6 +47,33 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 
 
+//======================
+//fx menuicons styles
+//======================
+function add_menu_icons_styles(){
+?>
+ 
+<style>
+
+#menu-posts-university .wp-menu-image:before {
+	content: "\f118";
+}
+#menu-posts-partner .wp-menu-image:before {
+	content: "\f307";
+}
+#menu-posts-new .wp-menu-image:before {
+	content: "\f488";
+}
+
+</style>
+ 
+<?php
+}
+add_action( 'admin_head', 'add_menu_icons_styles' );
+
+
+
+
 // //-------------------------------------------------  
 // //function custome Image
 // //-------------------------------------------------

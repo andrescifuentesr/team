@@ -1961,6 +1961,21 @@ html[xmlns] .slides {
   font-size: 0.77778rem;
 }
 
+article .tablepress {
+  font-size: 0.7em;
+}
+article .tablepress thead th {
+  background: #29abe2;
+  color: #fff;
+  text-align: center;
+}
+article .tablepress tr {
+  border: 1px solid #ddd;
+}
+article .tablepress td {
+  text-align: center;
+}
+
 *,
 *:after,
 *:before {
