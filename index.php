@@ -21,21 +21,13 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<!-- <img src="<?php bloginfo('template_directory'); ?>/img/carte.svg"  alt="Logo Erasmus Mundus" class="block__carte" /> -->
-
+				<!-- import inline interactive svg  -->
 				<?php get_template_part('inc/inline', 'carte.svg'); ?>
 				
-				<section class="block__central">
+				<!-- import pop-up avec description of university  -->
+				<?php get_template_part( 'inc/template', 'home-university' ); ?>
 
-					<header class="entry-header">
-						<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-					</header>
-					<div class="entry-content">
-						<?php the_content(); ?>
-					</div>
-					
-				</section>
-
+				<!-- sidebar news -->
 				<?php get_template_part( 'inc/template', 'news' ); ?>
 
 			<?php endwhile; ?>

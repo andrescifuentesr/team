@@ -408,24 +408,13 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
   /* Improves usability and consistency of cursor style between image-type 'input' and others */
   -webkit-appearance: button;
   /* Corrects inability to style clickable 'input' types in iOS */
-  font-size: 12px;
-  font-size: 1.2rem;
   line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
-button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
@@ -433,7 +422,6 @@ input[type="submit"]:hover {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
 }
 
-button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus,
@@ -1877,6 +1865,49 @@ h6 {
   font-size: 1.27778rem;
 }
 
+.content-area {
+  background: #dddddd;
+  text-align: center;
+}
+
+.site-main {
+  position: relative;
+  background: #DDDDDD;
+  padding: 3.5em 2em;
+  width: 100%;
+  min-height: 627px;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.site-main .block__central {
+  position: relative;
+  text-align: left;
+  z-index: 10;
+  float: left;
+  width: 70%;
+  margin-right: 2.5%;
+  padding: 2em 2.5em;
+  background: #fff;
+}
+
+.site-main .block__sidebar {
+  position: relative;
+  z-index: 10;
+  width: 27.5%;
+  float: right;
+}
+
+.site-main .block__carte {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
 .site-main p,
 .site-main ul,
 .site-main ol {
@@ -2148,47 +2179,135 @@ h6 {
   transform: translate(1em, -50%);
 }
 
-.content-area {
-  background: #dddddd;
+.home .block__central {
+  padding: 0;
+  position: relative;
+  z-index: 99999999;
+}
+
+.home .block__central .entry-header {
+  margin: 1.4em 0 0.7em;
+  border-bottom: 4px solid #29abe2;
+  padding-bottom: 0.4em;
+  color: #515151;
+  line-height: 1.2em;
+}
+
+.home .block__central .entry-title {
+  border-bottom: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'ralewayregular';
+  font-size: 14px;
+  font-size: 0.77778rem;
+}
+
+.home .block__central .entry-content {
+  margin: 0;
+}
+
+.home #block__central-120 .entry-header,
+.home #block__central-110 .entry-header,
+.home #block__central-117 .entry-header,
+.home #block__central-145 .entry-header,
+.home #block__central-123 .entry-header,
+.home #block__central-127 .entry-header {
+  border-bottom: 4px solid red;
+}
+
+.home .block__central--home-text {
+  display: inline-block;
+  width: 35%;
+  vertical-align: top;
+  padding: 1.5em 1.25em 1em;
+}
+
+.home .block__central--home-text .read-more {
+  position: relative;
+  display: inline-block;
+  background: #4d4d4d;
+  color: #fff;
+  padding: 0.5em 3em;
+  text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
+  font-family: 'ralewaymedium';
+  -webkit-transition: 0.1s all linear;
+  transition: 0.1s all linear;
+  font-size: 14px;
+  font-size: 0.77778rem;
 }
 
-.site-main {
-  position: relative;
-  background: #DDDDDD;
-  padding: 3.5em 2em;
-  width: 100%;
-  min-height: 627px;
-  height: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.site-main .block__central {
-  position: relative;
-  text-align: left;
-  z-index: 10;
-  float: left;
-  width: 70%;
-  margin-right: 2.5%;
-  padding: 2em 2.5em;
-  background: #fff;
-}
-
-.site-main .block__sidebar {
-  position: relative;
-  z-index: 10;
-  width: 27.5%;
-  float: left;
-}
-
-.site-main .block__carte {
-  display: block;
-  margin: 0 auto;
+.home .block__central--home-text .read-more::before {
+  content: "";
   position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 2em;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  border-left: 5px solid #fff;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  -webkit-transition: 0.1s all linear;
+  transition: 0.1s all linear;
+}
+
+.home .block__central--home-text .read-more:hover {
+  background: #6c6c6c;
+}
+
+.home .block__central--home-text .read-more:hover::before {
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  -webkit-transform: translate(0.35em, -50%);
+  transform: translate(0.35em, -50%);
+}
+
+.home .block__central--home-image {
+  display: inline-block;
+  width: 65%;
+  vertical-align: top;
+}
+
+.home .block__university--campus img {
+  display: block;
+}
+
+.home .block__university--logo {
+  width: 45%;
+  margin-top: 1.5em;
+}
+
+.home #bt_modal {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  display: block;
+  padding: 8px 6em 2em 10px;
+}
+
+.home .bt_modal-close {
+  position: absolute;
+  right: 0;
   top: 0;
-  left: 0;
-  z-index: 0;
+  border: none;
+  color: #000;
+  background: #fff;
+  font-size: 1.4em;
+  padding: 0.2em 0.4em;
+  font-family: 'ralewaylight';
+  -webkit-transition: .2s all linear;
+  transition: .2s all linear;
+}
+
+.home .bt_modal-close:hover {
+  background: #29abe2;
+  color: #fff;
+}
+
+.home .block__central--inactive {
+  display: none;
 }
 
 .block__link--university {
@@ -2283,16 +2402,20 @@ article .tablepress td {
 
 .tooltipster-red {
   border-radius: 0px;
-  border-top: 5px solid #FF0000;
+  border-top: 5px solid red;
+  background: #fff;
+  color: #515151;
+}
+
+.tooltipster-red-bottom {
+  border-radius: 0px;
+  border-bottom: 5px solid red;
   background: #fff;
   color: #515151;
 }
 
 .tooltipster-content {
   line-height: 16px;
-  padding: 8px 10px;
-  padding-bottom: 2em;
-  padding-right: 6em;
   font-size: 13px;
   font-size: 0.72222rem;
 }

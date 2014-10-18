@@ -19,9 +19,9 @@ add_shortcode( 'button_apply', 'apply_now_shortcode' );
 //[button_apply]
 
 
-/**
- * Register Socail Menu
- */
+//-------------------------------------------------  
+// Register Footer Menu
+//-------------------------------------------------
 add_action( 'init', 'footer_register_nav_menus' );
 
 function footer_register_nav_menus() {
@@ -35,13 +35,13 @@ function footer_register_nav_menus() {
  */
 
 function new_excerpt_more( $more ) {
-	return '... <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">Read More</a>';
+	return '... <div class="block__read-more"><a class="read-more" href="'. get_permalink( get_the_ID() ) . '">See More</a></div>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
 //Control Excerpt Length using Filters
 function custom_excerpt_length( $length ) {
-	return 30;
+	return 40;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 

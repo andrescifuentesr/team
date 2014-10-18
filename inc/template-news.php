@@ -13,9 +13,9 @@
 		<?php
 			$args2 = array(
 				'post_type' 		=> 'new',			//Costum type Proyectos			
-				'order'				=> 'ASC',			// List in ascending order
-				'orderby'      		=> 'name',			// List them in their menu order
-				'posts_per_page'	=>   -1, 			// Show the last one
+				'order'				=> 'DESC',			// List in ascending order
+				'orderby'      		=> 'id',			// List them in their menu order
+				'posts_per_page'	=>   2, 			// Show the last one
 			);
 
 			$newsQuery = new WP_Query($args2);

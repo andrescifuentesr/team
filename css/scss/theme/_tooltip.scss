@@ -6,15 +6,18 @@
 }
 .tooltipster-red {
 	border-radius: 0px; 
-	border-top: 5px solid #FF0000;
+	border-top: 5px solid $color-red;
+	background: #fff;
+	color: #515151;
+}
+.tooltipster-red-bottom {
+	border-radius: 0px; 
+	border-bottom: 5px solid $color-red;
 	background: #fff;
 	color: #515151;
 }
 .tooltipster-content {
 	line-height: 16px;
-	padding: 8px 10px;
-	padding-bottom: 2em;
-	padding-right: 6em;
 	@include font-size( 13px );
 
 	.tool-university {
