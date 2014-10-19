@@ -1,6 +1,8 @@
 .site-footer {
 	width:100%;
 	border-top: 1px solid #b3b3b3;
+	padding: 0.5em 0;
+	@include mq(phone) { padding: 0.5em 0; }
 
 	.site-info {
 		max-width:1400px;
@@ -12,6 +14,12 @@
 		display:inline-block;
 		width: 20%;
 		vertical-align:middle;
+		@include mq(phone) { width: 100%; text-align: center;}
+	}
+
+	.site-info__search {
+		margin-top: 0.5em;
+		@include mq(phone) { padding: 0 1em; margin-bottom: 0.5em; }
 	}
 
 	.site-info__menu {
@@ -19,11 +27,13 @@
 		width: 60%;
 		vertical-align:middle;
 		text-align: center;
+		@include mq(phone) { width: 100%; }
+	}
 
-		p {
-			color: #999999;
-			@include font-size( 10px );
-		}
+	.site-info__mention {
+		color: #999999;
+		text-align: center;
+		@include font-size( 10px );
 	}
 
 	.site-info__erasmus {

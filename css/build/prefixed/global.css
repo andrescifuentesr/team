@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 @font-face {
   font-family: 'dosisregular';
   src: url("../../fonts/dosis-regular-webfont.eot");
@@ -644,399 +642,6 @@ iframe,
 object {
   max-width: 100%;
 }
-
-/*------------------------------------*\
-    $CSSWIZARDRY-GRIDS
-\*------------------------------------*/
-
-/**
- * CONTENTS
- * INTRODUCTION.........How the grid system works.
- * VARIABLES............Your settings.
- * MIXINS...............Library mixins.
- * GRID SETUP...........Build the grid structure.
- * WIDTHS...............Build our responsive widths around our breakpoints.
- * PUSH.................Push classes.
- * PULL.................Pull classes.
- */
-
-/*------------------------------------*\
-    $INTRODUCTION
-\*------------------------------------*/
-
-/**
- * csswizardry grids provides you with widths to suit a number of breakpoints
- * designed around devices of a size you specify. Out of the box, csswizardry
- * grids caters to the following types of device:
- *
- * palm     --  palm-based devices, like phones and small tablets
- * lap      --  lap-based devices, like iPads or laptops
- * portable --  all of the above
- * desk     --  stationary devices, like desktop computers
- * regular  --  any/all types of device
- *
- * These namespaces are then used in the library to give you the ability to
- * manipulate your layouts based around them, for example:
- *
-   <div class="grid__item  one-whole  lap--one-half  desk--one-third">
- *
- * This would give you a grid item which is 100% width unless it is on a lap
- * device, at which point it become 50% wide, or it is on a desktop device, at
- * which point it becomes 33.333% width.
- *
- * csswizardry grids also has push and pull classes which allow you to nudge
- * grid items left and right by a defined amount. These follow the same naming
- * convention as above, but are prepended by either `push--` or `pull--`, for
- * example:
- *
-   `class="grid__item  one-half  push--one-half"`
- *
- * This would give you a grid item which is 50% width and pushed over to the
- * right by 50%.
- *
- * All classes in csswizardry grids follow this patten, so you should fairly
- * quickly be able to piece together any combinations you can imagine, for
- * example:
- *
-   `class="grid__item  one-whole  lap--one-half  desk--one-third  push--desk--one-third"`
- *
-   `class="grid__item  one-quarter  palm--one-half  push--palm--one-half"`
- *
-   `class="grid__item  palm--one-third  desk--five-twelfths"`
- */
-
-/*------------------------------------*\
-    $VARIABLES
-\*------------------------------------*/
-
-/**
- * If you are building a non-responsive site but would still like to use
- * csswizardry-grids, set this to ‘false’:
- */
-
-/**
- * Is this build mobile first? Setting to ‘true’ means that all grids will be
- * 100% width if you do not apply a more specific class to them.
- */
-
-/**
- * Set the spacing between your grid items.
- */
-
-/**
- * Would you like Sass’ silent classes, or regular CSS classes?
- */
-
-/**
- * Would you like push and pull classes enabled?
- */
-
-/**
- * Using `inline-block` means that the grid items need their whitespace removing
- * in order for them to work correctly. Set the following to true if you are
- * going to achieve this by manually removing/commenting out any whitespace in
- * your HTML yourself.
- *
- * Setting this to false invokes a hack which cannot always be guaranteed,
- * please see the following for more detail:
- *
- * github.com/csswizardry/csswizardry-grids/commit/744d4b23c9d2b77d605b5991e54a397df72e0688
- * github.com/csswizardry/inuit.css/issues/170#issuecomment-14859371
- */
-
-/**
- * Define your breakpoints. The first value is the prefix that shall be used for
- * your classes (e.g. `.palm--one-half`), the second value is the media query
- * that the breakpoint fires at.
- */
-
-/**
- * Define which namespaced breakpoints you would like to generate for each of
- * widths, push and pull. This is handy if you only need pull on, say, desk, or
- * you only need a new width breakpoint at mobile sizes. It allows you to only
- * compile as much CSS as you need. All are turned on by default, but you can
- * add and remove breakpoints at will.
- *
- * Push and pull shall only be used if `$push` and/or `$pull` and `$responsive`
- * have been set to ‘true’.
- */
-
-/**
- * You do not need to edit anything from this line onward; csswizardry-grids is
- * good to go. Happy griddin’!
- */
-
-/*------------------------------------*\
-    $MIXINS
-\*------------------------------------*/
-
-/**
- * These mixins are for the library to use only, you should not need to modify
- * them at all.
- *
- * Enclose a block of code with a media query as named in `$breakpoints`.
- */
-
-/**
- * Drop relative positioning into silent classes which can’t take advantage of
- * the `[class*="push--"]` and `[class*="pull--"]` selectors.
- */
-
-/*------------------------------------*\
-    $GRID SETUP
-\*------------------------------------*/
-
-/**
- * 1. Allow the grid system to be used on lists.
- * 2. Remove any margins and paddings that might affect the grid system.
- * 3. Apply a negative `margin-left` to negate the columns’ gutters.
- */
-
-/**
- * 1. Cause columns to stack side-by-side.
- * 2. Space columns apart.
- * 3. Align columns to the tops of each other.
- * 4. Full-width unless told to behave otherwise.
- * 5. Required to combine fluid widths and fixed gutters.
- */
-
-/**
- * Reversed grids allow you to structure your source in the opposite order to
- * how your rendered layout will appear.
- */
-
-/**
- * Gutterless grids have all the properties of regular grids, minus any spacing.
- */
-
-/**
- * Align the entire grid to the right.
- */
-
-/**
- * Centered grids align grid items centrally without needing to use push or pull
- * classes.
- */
-
-/*------------------------------------*\
-    $WIDTHS
-\*------------------------------------*/
-
-/**
- * Create our width classes, prefixed by the specified namespace.
- */
-
-/**
- * Our regular, non-responsive width classes.
- */
-
-/**
- * Whole
- */
-
-/**
- * Halves
- */
-
-/**
- * Thirds
- */
-
-/**
- * Quarters
- */
-
-/**
- * Fifths
- */
-
-/**
- * Sixths
- */
-
-/**
- * Eighths
- */
-
-/**
- * Tenths
- */
-
-/**
- * Twelfths
- */
-
-/**
- * Our responsive classes, if we have enabled them.
- */
-
-@media only screen and (max-width: 40em) {
-  /**
-   * Whole
-   */
-
-  /**
-   * Halves
-   */
-
-  /**
-   * Thirds
-   */
-
-  /**
-   * Quarters
-   */
-
-  /**
-   * Fifths
-   */
-
-  /**
-   * Sixths
-   */
-
-  /**
-   * Eighths
-   */
-
-  /**
-   * Tenths
-   */
-
-  /**
-   * Twelfths
-   */
-}
-
-@media only screen and (min-width: 40em) and (max-width: 63em) {
-  /**
-   * Whole
-   */
-
-  /**
-   * Halves
-   */
-
-  /**
-   * Thirds
-   */
-
-  /**
-   * Quarters
-   */
-
-  /**
-   * Fifths
-   */
-
-  /**
-   * Sixths
-   */
-
-  /**
-   * Eighths
-   */
-
-  /**
-   * Tenths
-   */
-
-  /**
-   * Twelfths
-   */
-}
-
-@media only screen and (min-width: 63em) and (max-width: 85em) {
-  /**
-   * Whole
-   */
-
-  /**
-   * Halves
-   */
-
-  /**
-   * Thirds
-   */
-
-  /**
-   * Quarters
-   */
-
-  /**
-   * Fifths
-   */
-
-  /**
-   * Sixths
-   */
-
-  /**
-   * Eighths
-   */
-
-  /**
-   * Tenths
-   */
-
-  /**
-   * Twelfths
-   */
-}
-
-@media only screen and (min-width: 85em) {
-  /**
-   * Whole
-   */
-
-  /**
-   * Halves
-   */
-
-  /**
-   * Thirds
-   */
-
-  /**
-   * Quarters
-   */
-
-  /**
-   * Fifths
-   */
-
-  /**
-   * Sixths
-   */
-
-  /**
-   * Eighths
-   */
-
-  /**
-   * Tenths
-   */
-
-  /**
-   * Twelfths
-   */
-}
-
-/*------------------------------------*\
-    $PUSH
-\*------------------------------------*/
-
-/**
- * Push classes, to move grid items over to the right by certain amounts.
- */
-
-/*------------------------------------*\
-    $PULL
-\*------------------------------------*/
-
-/**
- * Pull classes, to move grid items back to the left by certain amounts.
- */
 
 p {
   margin: 0 0 1em;
@@ -1683,6 +1288,25 @@ h6 {
   border-bottom: 1px solid #b3b3b3;
 }
 
+.site-header .site-branding h1 {
+  margin-bottom: 0;
+}
+
+.site-header .site-branding a {
+  display: none;
+}
+
+@media (max-width: 42em) {
+  .site-header .site-branding a {
+    display: block;
+    margin: 0 auto;
+    text-indent: -9999px;
+    height: 80px;
+    width: 90px;
+    background: url("../../../img/logo-team-small.svg") center center no-repeat white;
+  }
+}
+
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
@@ -1702,11 +1326,26 @@ h6 {
   text-align: center;
 }
 
+@media (max-width: 42em) {
+  .main-navigation ul {
+    text-align: left;
+  }
+}
+
 .main-navigation li {
   float: left;
   position: relative;
   padding: 1.5em 0;
   width: 20%;
+}
+
+@media (max-width: 42em) {
+  .main-navigation li {
+    width: 100%;
+    float: none;
+    padding: 0;
+    border-bottom: 2px solid #fff;
+  }
 }
 
 .main-navigation a {
@@ -1720,9 +1359,37 @@ h6 {
   font-size: 1.44444rem;
 }
 
+@media only screen and (min-width: 42em) and (max-width: 62em) {
+  .main-navigation a {
+    font-size: 20px;
+    font-size: 1.11111rem;
+  }
+}
+
+@media (max-width: 42em) {
+  .main-navigation a {
+    padding: 0.5em 0 0.5em 2em;
+    font-size: 20px;
+    font-size: 1.11111rem;
+  }
+}
+
 .menu > li:nth-child(1) > a,
 .menu > li:nth-child(4) > a {
   border-right: 1px solid #fff;
+}
+
+@media (max-width: 42em) {
+  .menu > li:nth-child(1) > a,
+  .menu > li:nth-child(4) > a {
+    border: none;
+  }
+}
+
+@media (max-width: 42em) {
+  .menu > li:nth-child(1) {
+    border-top: 2px solid #fff;
+  }
 }
 
 .menu #menu-item-67 {
@@ -1730,12 +1397,32 @@ h6 {
   text-indent: -9999px;
 }
 
+@media (max-width: 42em) {
+  .menu #menu-item-67 {
+    display: none;
+  }
+}
+
 .main-navigation .sub-menu {
+  display: none;
   float: left;
   position: absolute;
   top: 9.4em;
-  left: -999em;
+  left: 0;
   z-index: 99999;
+}
+
+@media only screen and (min-width: 42em) and (max-width: 62em) {
+  .main-navigation .sub-menu {
+    top: 8.1em;
+  }
+}
+
+@media (max-width: 42em) {
+  .main-navigation .sub-menu {
+    float: none;
+    position: static;
+  }
 }
 
 .main-navigation .sub-menu::before {
@@ -1751,11 +1438,38 @@ h6 {
   border-bottom: 10px solid #fff;
 }
 
+@media (max-width: 42em) {
+  .main-navigation .sub-menu::before {
+    top: 1em;
+    left: 1em;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    border-left: 10px solid #fff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+}
+
 .main-navigation .sub-menu li {
   width: 100%;
   padding: 0;
   border-top: 3px solid #fff;
   text-align: left;
+}
+
+@media (max-width: 42em) {
+  .main-navigation .sub-menu li {
+    border-top: none;
+    border-bottom: 2px solid #fff;
+  }
+
+  .main-navigation .sub-menu li:first-child {
+    border-top: 2px solid #fff;
+  }
+
+  .main-navigation .sub-menu li:last-child {
+    border-bottom: none;
+  }
 }
 
 .main-navigation .sub-menu li:hover a {
@@ -1773,12 +1487,20 @@ h6 {
   font-size: 0.88889rem;
 }
 
-.main-navigation ul li:hover > ul {
-  left: auto;
+@media only screen and (min-width: 42em) and (max-width: 62em) {
+  .main-navigation .sub-menu a {
+    padding-left: 0.5em;
+  }
 }
 
-.main-navigation ul ul li:hover > ul {
-  left: 100%;
+@media (max-width: 42em) {
+  .main-navigation .sub-menu a {
+    padding-left: 4em;
+  }
+}
+
+.main-navigation ul li:hover > ul {
+  display: block;
 }
 
 /* Small menu */
@@ -1787,10 +1509,21 @@ h6 {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 42em) {
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
     display: block;
+  }
+
+  .menu-toggle {
+    width: 45px;
+    height: 40px;
+    position: absolute;
+    right: 1em;
+    top: 1.2em;
+    text-indent: -9999px;
+    border: none;
+    background: url("../../../img/icon-menu.svg") center center no-repeat white;
   }
 
   .main-navigation ul {
@@ -1801,6 +1534,13 @@ h6 {
 .site-footer {
   width: 100%;
   border-top: 1px solid #b3b3b3;
+  padding: 0.5em 0;
+}
+
+@media (max-width: 42em) {
+  .site-footer {
+    padding: 0.5em 0;
+  }
 }
 
 .site-footer .site-info {
@@ -1815,6 +1555,25 @@ h6 {
   vertical-align: middle;
 }
 
+@media (max-width: 42em) {
+  .site-footer .site-info__search,
+  .site-footer .site-info__erasmus {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.site-footer .site-info__search {
+  margin-top: 0.5em;
+}
+
+@media (max-width: 42em) {
+  .site-footer .site-info__search {
+    padding: 0 1em;
+    margin-bottom: 0.5em;
+  }
+}
+
 .site-footer .site-info__menu {
   display: inline-block;
   width: 60%;
@@ -1822,8 +1581,15 @@ h6 {
   text-align: center;
 }
 
-.site-footer .site-info__menu p {
+@media (max-width: 42em) {
+  .site-footer .site-info__menu {
+    width: 100%;
+  }
+}
+
+.site-footer .site-info__mention {
   color: #999999;
+  text-align: center;
   font-size: 10px;
   font-size: 0.55556rem;
 }
@@ -1836,10 +1602,6 @@ h6 {
 5.1 Menus socail et langues, Newsletter
 --------------------------------------------------------------*/
 
-.menu-footer {
-  padding: 1em 0 0;
-}
-
 .menu-footer ul {
   list-style: none;
   margin: 0;
@@ -1850,10 +1612,37 @@ h6 {
   padding: 0 2em;
   border-right: 1px solid #29abe2;
   line-height: 1em;
+  -webkit-transition: .2s all linear;
+  transition: .2s all linear;
+}
+
+@media only screen and (min-width: 42em) and (max-width: 62em) {
+  .menu-footer li {
+    padding: 0 .75em;
+  }
+}
+
+@media (max-width: 42em) {
+  .menu-footer li {
+    width: 100%;
+    padding: 0;
+    border-right: none;
+    border-top: 1px solid #29abe2;
+  }
+
+  .menu-footer li:hover {
+    background: #29abe2;
+  }
 }
 
 .menu-footer li:last-child {
   border-right: none;
+}
+
+@media (max-width: 42em) {
+  .menu-footer li:last-child {
+    border-bottom: 1px solid #29abe2;
+  }
 }
 
 .menu-footer a {
@@ -1861,8 +1650,22 @@ h6 {
   font-family: 'dosisregular';
   font-weight: normal;
   text-transform: uppercase;
+  -webkit-transition: .2s all linear;
+  transition: .2s all linear;
   font-size: 23px;
   font-size: 1.27778rem;
+}
+
+@media (max-width: 42em) {
+  .menu-footer a {
+    width: 100%;
+    display: block;
+    padding: .5em 0;
+  }
+
+  .menu-footer a:hover {
+    color: #fff;
+  }
 }
 
 .content-area {
@@ -1881,22 +1684,59 @@ h6 {
   margin: 0 auto;
 }
 
+@media (max-width: 42em) {
+  .site-main {
+    padding: 1.5em 1em;
+  }
+}
+
 .site-main .block__central {
   position: relative;
   text-align: left;
   z-index: 10;
   float: left;
-  width: 70%;
-  margin-right: 2.5%;
+  width: 73.5%;
+  margin-right: 1.5%;
   padding: 2em 2.5em;
   background: #fff;
+}
+
+@media only screen and (min-width: 42em) and (max-width: 62em) {
+  .site-main .block__central {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media (max-width: 42em) {
+  .site-main .block__central {
+    width: 100%;
+    float: none;
+    padding: 1em;
+  }
 }
 
 .site-main .block__sidebar {
   position: relative;
   z-index: 10;
-  width: 27.5%;
+  width: 25%;
   float: right;
+}
+
+@media only screen and (min-width: 42em) and (max-width: 62em) {
+  .site-main .block__sidebar {
+    width: 100%;
+    float: none;
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 42em) {
+  .site-main .block__sidebar {
+    width: 100%;
+    float: none;
+    margin-top: 1em;
+  }
 }
 
 .site-main .block__carte {
@@ -1906,6 +1746,8 @@ h6 {
   width: 100%;
   height: 100%;
   z-index: 0;
+  top: 0;
+  left: 0;
 }
 
 .site-main p,
@@ -1932,11 +1774,35 @@ h6 {
   text-align: center;
 }
 
+@media only screen and (min-width: 42em) and (max-width: 62em) {
+  .block__central .block__apply--content {
+    width: auto;
+  }
+}
+
+@media (max-width: 42em) {
+  .block__central .block__apply--content {
+    width: auto;
+  }
+}
+
 .block__central .block__apply--content .bt_apply {
   display: block;
   padding: 0.5em 0;
   color: #fff;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 42em) and (max-width: 62em) {
+  .block__central .block__apply--content .bt_apply {
+    padding: 0.5em 2.5em;
+  }
+}
+
+@media (max-width: 42em) {
+  .block__central .block__apply--content .bt_apply {
+    padding: 0.5em 2.5em;
+  }
 }
 
 .block__central h4 {
@@ -2131,6 +1997,7 @@ h6 {
 .block__sidebar .block--article__news .read-more {
   color: #4d4d4d;
   text-decoration: underline;
+  display: none;
 }
 
 .block__apply {
@@ -2153,12 +2020,26 @@ h6 {
   font-size: 1.11111rem;
 }
 
+@media only screen and (min-width: 42em) and (max-width: 62em) {
+  .block__apply .bt_apply {
+    text-align: left;
+    padding-left: 2.5em;
+  }
+}
+
+@media (max-width: 42em) {
+  .block__apply .bt_apply {
+    text-align: left;
+    padding-left: 2.5em;
+  }
+}
+
 .block__apply .bt_apply::before {
   content: "";
   position: absolute;
   z-index: 100;
   top: 50%;
-  left: 4em;
+  left: 20%;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   border-left: 10px solid #fff;
@@ -2168,6 +2049,18 @@ h6 {
   transition: 0.1s all linear;
 }
 
+@media only screen and (min-width: 42em) and (max-width: 62em) {
+  .block__apply .bt_apply::before {
+    left: 1em;
+  }
+}
+
+@media (max-width: 42em) {
+  .block__apply .bt_apply::before {
+    left: 1em;
+  }
+}
+
 .block__apply .bt_apply:hover {
   background: #6c6c6c;
 }
@@ -2175,14 +2068,23 @@ h6 {
 .block__apply .bt_apply:hover::before {
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  -webkit-transform: translate(1em, -50%);
-  transform: translate(1em, -50%);
+  -webkit-transform: translate(0.5em, -50%);
+  transform: translate(0.5em, -50%);
 }
 
 .home .block__central {
   padding: 0;
   position: relative;
   z-index: 99999999;
+}
+
+@media only screen and (min-width: 62em) and (max-width: 75em) {
+  .home .block__central {
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    width: 100%;
+  }
 }
 
 .home .block__central .entry-header {
@@ -2217,7 +2119,7 @@ h6 {
 
 .home .block__central--home-text {
   display: inline-block;
-  width: 35%;
+  width: 30%;
   vertical-align: top;
   padding: 1.5em 1.25em 1em;
 }
@@ -2266,7 +2168,7 @@ h6 {
 
 .home .block__central--home-image {
   display: inline-block;
-  width: 65%;
+  width: 70%;
   vertical-align: top;
 }
 
@@ -2432,6 +2334,113 @@ article .tablepress td {
 
 .tooltipster-content .tool-country {
   font-family: 'ralewayregular';
+}
+
+.sb-search {
+  position: relative;
+  width: 0%;
+  min-width: 40px;
+  height: 40px;
+  float: right;
+  overflow: hidden;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+  -webkit-backface-visibility: hidden;
+}
+
+.sb-search-input,
+input[type=text] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  outline: none;
+  background: #fff;
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  z-index: 10;
+  padding: 0 65px 0 20px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #29abe2;
+  border: 1px solid #29abe2;
+  border-radius: 0;
+}
+
+.sb-search-input::-webkit-input-placeholder {
+  color: #29abe2;
+}
+
+.sb-search-input:-moz-placeholder {
+  color: #29abe2;
+}
+
+.sb-search-input::-moz-placeholder {
+  color: #29abe2;
+}
+
+.sb-search-input:-ms-input-placeholder {
+  color: #29abe2;
+}
+
+.sb-icon-search,
+.sb-search-submit {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sb-search-submit {
+  background: #fff;
+  /* IE needs this */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* IE 8 */
+  filter: alpha(opacity=0);
+  /* IE 5-7 */
+  opacity: 0;
+  color: transparent;
+  border: none;
+  outline: none;
+  z-index: -1;
+}
+
+.sb-icon-search {
+  color: #fff;
+  background: url("../../../img/icon-search.svg") no-repeat center center #29abe2;
+  z-index: 90;
+  font-size: 22px;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Open state */
+
+.sb-search.sb-search-open,
+.no-js .sb-search {
+  width: 100%;
+}
+
+.sb-search.sb-search-open .sb-icon-search,
+.no-js .sb-search .sb-icon-search {
+  color: #fff;
+  z-index: 11;
+}
+
+.sb-search.sb-search-open .sb-search-submit,
+.no-js .sb-search .sb-search-submit {
+  z-index: 90;
 }
 
 *,

@@ -19,9 +19,6 @@
 				  
 			--><div class="site-info__menu">
 				<?php get_template_part( 'inc/menu', 'footer' ); ?>
-				<p>
-					Mentions Légales - Design : Thomas La Blanc / Antoine Marinot -  Développment : Andres Cifuentes
-				</p>
 			</div><!--
 
 		--><div class="site-info__search">
@@ -29,6 +26,7 @@
 			</div>
 
 		</div><!-- .site-info -->
+		<p class="site-info__mention">Mentions Légales - Design : Thomas La Blanc / Antoine Marinot -  Développment : Andres Cifuentes</p>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

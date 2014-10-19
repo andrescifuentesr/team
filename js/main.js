@@ -111,4 +111,7 @@ jQuery(document).ready(function( $ ) {
 		var modal_close = $(this).attr("data-modal-close");
 		$('#block__central-'+modal_close).addClass('block__central--inactive');
 	});
+
+	//we call our unity search box
+	new UISearch( document.getElementById( 'sb-search' ) );
 });

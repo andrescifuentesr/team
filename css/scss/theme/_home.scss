@@ -4,6 +4,12 @@
 		padding: 0;
 		position: relative;
 		z-index:99999999;
+		@include mq(lap) { 
+			position: absolute;
+			top:2em;
+			left:2em;
+			width: 100%;
+		}
 
 		.entry-header {
 			margin:1.4em 0 0.7em;
@@ -39,9 +45,13 @@
 
 	.block__central--home-text {
 		display: inline-block;
-		width:35%;
+		width:30%;
 		vertical-align: top;
 		padding: 1.5em 1.25em 1em;
+		// @include mq(lap) { min-height: 500px;}
+		// @include mq(tablet) { min-height: 400px; }
+		// @include mq(phone) { width: 100%; }
+		// @include mq(lap) { width: 100%; }
 
 		.read-more {
 			position: relative;
@@ -83,11 +93,13 @@
 
 	.block__central--home-image {
 		display: inline-block;
-		width:65%;
+		width:70%;
 		vertical-align: top;	
+		// @include mq(lap) { width: 100%; }
 	}
 
 	.block__university--campus {
+
 		img {
 			display: block;
 		}

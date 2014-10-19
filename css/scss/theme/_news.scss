@@ -75,6 +75,8 @@
 		.read-more {
 			color: #4d4d4d;
 			text-decoration: underline;
+
+			display: none;
 		}
 	}
 
@@ -95,18 +97,22 @@
 		font-family: 'ralewaymedium';
 		transition: 0.1s all linear;
 		@include font-size( 20px );
+		@include mq(tablet) { text-align: left; padding-left: 2.5em;}
+		@include mq(phone) { text-align: left; padding-left: 2.5em;}
 
 		&::before {
 			content: "";
 			position: absolute;
 			z-index: 100;
 			top:50%;
-			left:4em;
+			left:20%;
 			transform: translate(0, -50%);
 			border-left: 10px solid #fff;
 			border-top: 10px solid transparent;
 			border-bottom: 10px solid transparent;
 			transition: 0.1s all linear;
+			@include mq(tablet) { left: 1em;}
+			@include mq(phone) { left: 1em;}
 		}
 
 		&:hover {
@@ -115,7 +121,7 @@
 			&::before {
 				border-top: 5px solid transparent;
 				border-bottom: 5px solid transparent;
-				transform: translate(1em, -50%);
+				transform: translate(0.5em, -50%);
 			}
 		}
 	}
