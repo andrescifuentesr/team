@@ -35,7 +35,7 @@
 	--><div class="block__central--home-image">
 			<div class="block__university--campus">
 				<?php $image_university_photo = get_field('university_photo'); ?>
-				<img src="<?php echo $image_university_photo['url']; ?>" alt="<?php echo $image_university_photo['alt']; ?>" />
+				<img class="block__university--img" src="<?php echo $image_university_photo['url']; ?>" alt="<?php echo $image_university_photo['alt']; ?>" />
 			</div>
 		</div>
 	

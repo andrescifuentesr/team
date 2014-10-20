@@ -12,8 +12,7 @@
 	height:100%;
 	max-width:1400px;
 	margin: 0 auto;
-	// @include mq(lap) { min-height: 500px;}
-	// @include mq(tablet) { min-height: 400px; }
+	@include mq(lap) { padding: 3.5em 1em; }
 	@include mq(phone) { padding: 1.5em 1em; }
 
 	.block__central {
@@ -35,7 +34,7 @@
 		z-index: 10;
 		width: 25%;
 		float: right;
-		@include mq(tablet) { width: 100%; float:none;  margin-top: 1em;}
+		@include mq(tablet) { width: 100%; float:none;  margin-top: 1.25em;}
 		@include mq(phone) { width: 100%; float:none; margin-top: 1em;}
 	}
 

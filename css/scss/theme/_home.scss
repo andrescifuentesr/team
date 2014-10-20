@@ -1,15 +1,21 @@
 .home {
 
+	//=========================
+	//==== structure central
+	.site-main {
+		// @include mq(lap) { padding: 1.5em 1em; }
+		@include mq(tablet) { padding: 0.5em 0.5em 1em; }
+		@include mq(phone) { padding: 0 0.5em 1.5em; }
+	}
+
+
 	.block__central {
 		padding: 0;
 		position: relative;
 		z-index:99999999;
-		@include mq(lap) { 
-			position: absolute;
-			top:2em;
-			left:2em;
-			width: 100%;
-		}
+		@include mq(lap) { position: absolute; top:2em; left: 2.5%; right: 2.5%; width: 95%; margin-right: 0; }
+		@include mq(tablet) { position: absolute; top:2em; left: 1.2%; right: 1.2%; width: 97.6%; margin-right: 0; }
+		@include mq(phone) { position: absolute; top:1em; left: 1%; right: 1%; width: 98%; margin-right: 0; }
 
 		.entry-header {
 			margin:1.4em 0 0.7em;
@@ -17,6 +23,7 @@
 			padding-bottom: 0.4em;
 			color: #515151;
 			line-height: 1.2em;
+			@include mq(tablet) { margin:0 0 0.5em; }
 		}
 
 		.entry-title {
@@ -32,6 +39,13 @@
 		}
 
 	}
+
+	.block__carte { 
+		@include mq(tablet) { position:static; }
+		@include mq(phone) { position:static; }
+	}
+	//==== structure central
+	//=========================
 
 	//modification pour les u asiat
 	#block__central-120, #block__central-110, #block__central-117, 
@@ -49,9 +63,8 @@
 		vertical-align: top;
 		padding: 1.5em 1.25em 1em;
 		// @include mq(lap) { min-height: 500px;}
-		// @include mq(tablet) { min-height: 400px; }
-		// @include mq(phone) { width: 100%; }
-		// @include mq(lap) { width: 100%; }
+		@include mq(tablet) { width: 40%; padding: 1.5em 1em 0; }
+		@include mq(phone) { width: 100%; padding: 1.5em 1em 1em; }
 
 		.read-more {
 			position: relative;
@@ -96,18 +109,28 @@
 		width:70%;
 		vertical-align: top;	
 		// @include mq(lap) { width: 100%; }
+		@include mq(tablet) { width: 60%; }
+		@include mq(phone) { width: 100%; }
 	}
 
 	.block__university--campus {
+		@include mq(tablet) { overflow:hidden}
 
-		img {
+		.block__university--img {
 			display: block;
+			@include mq(tablet) {
+				max-width:none;
+				height: 325px;
+				width: 100%;
+			 }
 		}
 	}
 
 	.block__university--logo {
 		width: 45%;
 		margin-top: 1.5em;
+		@include mq(tablet) { width: 40%; margin-top: 0.8em;}
+
 	}
 
 	#bt_modal {
@@ -129,6 +152,7 @@
 		padding: 0.2em 0.4em;
 		font-family: 'ralewaylight';
 		transition: .2s all linear;
+		@include mq(phone) { background: $color-principal; color: #fff;}		
 
 		&:hover {
 			background: $color-principal;
@@ -140,4 +164,75 @@
 		display: none;
 	}
 
+	.tooltip-point {
+		cursor: pointer;
+		stroke: #ff0000;
+	}
+
+}
+
+#tooltip-madrid {
+	animation: pulsion 2s linear  infinite;
+}
+
+#tooltip-paris {
+	animation: pulsion 2s linear  infinite;
+	animation-delay: 3s;
+}
+
+#tooltip-berlin {
+	animation: pulsion 2s linear  infinite;
+	animation-delay: 1s;
+}
+
+#tooltip-eotvos {
+	animation: pulsion 2s linear  infinite;
+	animation-delay: 5s;
+}
+
+#tooltip-aalto {
+	animation: pulsion 2s linear  infinite;
+	animation-delay: 2s;
+}
+
+#tooltip-trento {
+	animation: pulsion 2s linear  infinite;
+	animation-delay: 2.5s;
+}
+
+#tooltip-keio {
+	animation: pulsion 2s linear  infinite;
+	animation-delay: 1s;
+}
+
+#tooltip-tokyo {
+	animation: pulsion 2s linear  infinite;
+	animation-delay: 3.5s;
+}
+
+#tooltip-nara {
+	animation: pulsion 2s linear  infinite;
+	animation-delay: 4s;
+}
+
+#tooltip-daejeon {
+	animation: pulsion 2s linear  infinite;
+	animation-delay: 4.5s;
+}
+
+#tooltip-gwangju {
+	animation: pulsion 2s linear  infinite;
+	animation-delay: 1.5s;
+}
+
+@keyframes pulsion {
+	0% {
+		stroke: #ff0000;
+		stroke-width: 0px;
+	}
+	100% {
+		stroke: transparent;
+		stroke-width: 10px;
+		// opacity: 0.5;
+	}
 }
