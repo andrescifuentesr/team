@@ -14,6 +14,9 @@
 	// min-height:120px;
 	margin-bottom: 0.5%;
 	@include simple-grid( 4, 0.5%);
+	@include mq(lap) { @include simple-grid( 3, 0.5%); }
+	@include mq(tablet) { @include simple-grid( 3, 0.5%); }
+	@include mq(phone) { @include simple-grid( 2, 0.5%); }
 
 	a {
 		display: block;
@@ -25,6 +28,7 @@
 		padding: 1.5em 1em;
 		max-height: 120px;
 		width: auto;
+		@include mq(phone) { max-height: 95px; padding: 1em 1em; }
 	}
 }
 

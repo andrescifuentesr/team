@@ -12,6 +12,12 @@ get_header(); ?>
 
 			<img src="<?php bloginfo('template_directory'); ?>/img/carte.svg"  alt="Logo Erasmus Mundus" class="block__carte" />
 
+			<div class="block__breadcrumb">
+				<p id="breadcrumbs">
+					<span> <span>News</span> > <span><?php the_title(); ?></span> </span>
+				</p>
+			</div>
+
 			<section class="block__central">
 
 				<?php while ( have_posts() ) : the_post(); ?>

@@ -1,4 +1,4 @@
-<div clas="test">
+<div>
 	<svg class="block__carte" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1280px"
 		 height="626.299px" viewBox="0 0 1280 626.299" enable-background="new 0 0 1280 626.299" xml:space="preserve">
 	<g id="mapa">
@@ -9,15 +9,6 @@
 			<clipPath id="SVGID_2_">
 				<use xlink:href="#SVGID_1_"  overflow="visible"/>
 			</clipPath>
-		</g>
-		<g>
-			<defs>
-				<rect id="SVGID_3_" x="-0.5" y="2.649" width="1280" height="625"/>
-			</defs>
-			<clipPath id="SVGID_4_">
-				<use xlink:href="#SVGID_3_"  overflow="visible"/>
-			</clipPath>
-			<rect x="-0.5" y="1.649" clip-path="url(#SVGID_4_)" fill="#DDDDDD" width="1280" height="624"/>
 		</g>
 		<g>
 			<defs>

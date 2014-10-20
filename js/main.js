@@ -100,6 +100,9 @@ jQuery(document).ready(function( $ ) {
 		content: $('<button id="bt_modal" data-modal="120"><p class="tool-university">KAIST (Korea Advanced Institute of Science and Technology)</p><span class="tool-city">DAEJEON</span> - <span class="tool-country">KOREA</span></button>')
 	});
 
+	//=================
+	//Tooltip
+	//=================
 	//we open the window on click tooltip
 	$('body').on('click', '#bt_modal', function (){
 		var modal = $(this).attr("data-modal");
@@ -112,6 +115,17 @@ jQuery(document).ready(function( $ ) {
 		$('#block__central-'+modal_close).addClass('block__central--inactive');
 	});
 
+	//=================
+	//Pop-up
+	//=================
+	//we open the modal when we load the first page
+	$('.bt_modal__home-close, .md-overlay').on('click', function (){
+		$('.block__central-modal').removeClass('md-show');
+	});
+
+	//=================
+	//Search
+	//=================
 	//we call our unity search box
 	new UISearch( document.getElementById( 'sb-search' ) );
 });

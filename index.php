@@ -23,6 +23,9 @@ get_header(); ?>
 
 				<!-- import inline interactive svg  -->
 				<?php get_template_part('inc/inline', 'carte.svg'); ?>
+
+				<!-- import pop-up for first time  -->
+				<?php get_template_part( 'inc/template', 'home-modal' ); ?>
 				
 				<!-- import pop-up avec description of university  -->
 				<?php get_template_part( 'inc/template', 'home-university' ); ?>

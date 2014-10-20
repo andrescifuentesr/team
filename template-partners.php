@@ -10,6 +10,10 @@ get_header(); ?>
 
 			<img src="<?php bloginfo('template_directory'); ?>/img/carte.svg"  alt="Logo Erasmus Mundus" class="block__carte" />
 
+			<?php if ( function_exists('yoast_breadcrumb') ) {
+				yoast_breadcrumb('<div class="block__breadcrumb"><p id="breadcrumbs">','</p></div>');
+			} ?>
+
 			<section class="block__central">
 
 				<?php while ( have_posts() ) : the_post(); ?>
