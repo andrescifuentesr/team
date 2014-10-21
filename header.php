@@ -29,7 +29,7 @@
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle"><?php _e( 'Primary Menu', 'team' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'before' => '<span class="line-up"></span>', 'after' => '<span class="line-down"></span>' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

@@ -1,0 +1,82 @@
+.menu > li {
+	
+	> .line-up {
+		position: relative;
+		opacity: 0;
+		transition: .1s all linear;
+
+		&::before, &::after {
+			content:"";
+			position: absolute;
+			width:2px;
+			height: 30px;
+			background: #fff;
+			transform: rotate(0);
+			transform-origin: bottom;
+			transition: .1s all linear;
+		}
+
+		&::before {
+			left: -1.5em;
+		}
+
+		&::after {
+			left: 1.5em;
+		}
+	}
+
+	> .line-down {
+		position: relative;
+		opacity: 0;
+		transition: .1s all linear;
+
+		&::before, &::after {
+			content:"";
+			position: absolute;
+			bottom: 0;
+			width:2px;
+			height: 30px;
+			background: #fff;
+			transform: rotate(0);
+			transform-origin: top;
+			transition: .1s all linear;
+		}
+
+		&::before {
+			left: -1.5em;
+		}
+
+		&::after {
+			left: 1.5em;
+		}
+	}
+}
+
+.main-navigation li:hover {
+
+	.line-up {
+		opacity: 1;
+		@include mq(phone) { opacity: 0; }
+
+		&::before {
+			transform: rotate(-45deg);
+		}
+
+		&::after {
+			transform: rotate(45deg);
+		}
+	}
+
+	.line-down {
+		opacity: 1;
+		@include mq(phone) { opacity: 0; }
+
+		&::before {
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+		}		
+	}
+}

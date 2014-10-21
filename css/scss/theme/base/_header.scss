@@ -74,6 +74,25 @@
 
 }
 
+.menu > li:hover {
+	position: relative;
+
+	@include mq(phone) {
+
+		&::before {
+			content: "";
+			position: absolute;
+			z-index: 100;
+			top:1em;
+			left:1em;
+			transform: translate(0, 0);
+			border-left: 10px solid #fff;
+			border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+		}
+	}
+}
+
 //lignes menus
 .menu > li:nth-child(1) > a,
 .menu > li:nth-child(4) > a {
@@ -91,7 +110,16 @@
 .menu #menu-item-67 {
 	background: url('../../../img/logo-team.svg') center center no-repeat #fff;
 	text-indent: -9999px;
+	transition: .2s all linear;
 	@include mq(phone) { display:none;}
+
+	&:hover {
+		background-color: #ededed;
+	}
+
+	> .line-up, > .line-down {
+		display: none;
+	}
 
 }
 
@@ -116,14 +144,7 @@
 		border-left: 10px solid transparent;
 		border-right: 10px solid transparent;
 		border-bottom: 10px solid #fff;
-		@include mq(phone) {
-			top:1em;
-			left:1em;
-			transform: translate(0, 0);
-			border-left: 10px solid #fff;
-			border-top: 10px solid transparent;
-			border-bottom: 10px solid transparent;
-		}
+		@include mq(phone) {display:none;}
 	}
 }
 
@@ -174,8 +195,58 @@
 	display:block;
 }
 
-.main-navigation .current_page_item a,
-.main-navigation .current-menu-item a {
+
+.main-navigation .sub-menu .current_page_item a,
+.main-navigation .sub-menu .current-menu-item a {
+	@include mq(phone) {
+		background: #fff;
+		color:$color-principal;
+	}
+}
+
+
+.main-navigation .current-menu-parent {
+
+	.line-up {
+		opacity: 1;
+		@include mq(phone) { opacity: 0; }
+
+		&::before {
+			transform: rotate(-45deg);
+		}
+
+		&::after {
+			transform: rotate(45deg);
+		}
+	}
+
+	.line-down {
+		opacity: 1;
+		@include mq(phone) { opacity: 0; }
+
+		&::before {
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+		}		
+	}
+
+	@include mq(phone) {
+
+		&::before {
+			content: "";
+			position: absolute;
+			z-index: 100;
+			top:1em;
+			left:1em;
+			transform: translate(0, 0);
+			border-left: 10px solid #fff;
+			border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+		}
+	}
 }
 
 /* Small menu */
