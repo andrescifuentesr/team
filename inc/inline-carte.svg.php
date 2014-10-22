@@ -1,4 +1,4 @@
-<div>
+<div class="wrapper-carte">
 	<svg class="block__carte" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1280px"
 		 height="626.299px" viewBox="0 0 1280 626.299" enable-background="new 0 0 1280 626.299" xml:space="preserve">
 	<g id="mapa">

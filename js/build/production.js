@@ -1363,63 +1363,6 @@ if ( typeof define === 'function' && define.amd ) {
 })( window );
 
 /**
- * modalEffects.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2013, Codrops
- * http://www.codrops.com
- */
-var ModalEffects = (function() {
-
-	function init() {
-
-		var overlay = document.querySelector( '.md-overlay' );
-
-		[].slice.call( document.querySelectorAll( '.md-trigger' ) ).forEach( function( el, i ) {
-
-			var modal = document.querySelector( '#' + el.getAttribute( 'data-modal' ) ),
-				close = modal.querySelector( '.md-close' );
-
-			function removeModal( hasPerspective ) {
-				classie.remove( modal, 'md-show' );
-
-				if( hasPerspective ) {
-					classie.remove( document.documentElement, 'md-perspective' );
-				}
-			}
-
-			function removeModalHandler() {
-				removeModal( classie.has( el, 'md-setperspective' ) ); 
-			}
-
-			el.addEventListener( 'click', function( ev ) {
-				classie.add( modal, 'md-show' );
-				overlay.removeEventListener( 'click', removeModalHandler );
-				overlay.addEventListener( 'click', removeModalHandler );
-
-				if( classie.has( el, 'md-setperspective' ) ) {
-					setTimeout( function() {
-						classie.add( document.documentElement, 'md-perspective' );
-					}, 25 );
-				}
-			});
-
-			close.addEventListener( 'click', function( ev ) {
-				ev.stopPropagation();
-				removeModalHandler();
-			});
-
-		} );
-
-	}
-
-	init();
-
-})();
-/**
  * uisearch.js v1.0.0
  * http://www.codrops.com
  *
@@ -1625,7 +1568,7 @@ jQuery(document).ready(function( $ ) {
 		theme: 'tooltipster-blue',
 		position: 'top-left',
 		interactive: true,
-		content: $('<button id="bt_modal" data-modal="142"><p class="tool-university">University of Trento</p><span class="tool-city">PARIS</span> - <span class="tool-country">France</span></button>')
+		content: $('<button id="bt_modal" data-modal="142"><p class="tool-university">Université Pierre et Marie Curie</p><span class="tool-city">PARIS</span> - <span class="tool-country">France</span></button>')
 	});
 
 	// berlin
@@ -1723,6 +1666,13 @@ jQuery(document).ready(function( $ ) {
 	$('.bt_modal-close').on('click', function (){
 		var modal_close = $(this).attr("data-modal-close");
 		$('#block__central-'+modal_close).addClass('block__central--inactive');
+	});
+
+	//modal home for mobile
+	$('.bt-home--mobile').on('click', function (){
+		var modal = $(this).attr("data-modal");
+		$('.block__central').addClass('block__central--inactive');
+		$('#block__central-'+modal).removeClass('block__central--inactive');
 	});
 
 	//=================

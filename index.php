@@ -30,6 +30,9 @@ get_header(); ?>
 				<!-- import pop-up avec description of university  -->
 				<?php get_template_part( 'inc/template', 'home-university' ); ?>
 
+				<!-- import home vs mobile  -->
+				<?php get_template_part( 'inc/template', 'home-mobile' ); ?>
+
 				<!-- sidebar news -->
 				<?php get_template_part( 'inc/template', 'news' ); ?>
 

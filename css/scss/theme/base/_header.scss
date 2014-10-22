@@ -48,6 +48,7 @@
 	position: relative;
 	padding: 1.5em 0;
 	width:20%;
+	z-index:30000;
 	@include mq(phone) {
 		width: 100%;
 		float: none;
@@ -75,7 +76,6 @@
 }
 
 .menu > li:hover {
-	position: relative;
 
 	@include mq(phone) {
 

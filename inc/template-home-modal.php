@@ -27,7 +27,7 @@
 				<?php the_content(); ?>
 			</div>
 
-			<div class="block__central--home-image">
+			<div class="block__central--home--image">
 				<?php the_post_thumbnail('full'); ?>
 			</div>
 

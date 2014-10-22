@@ -4,7 +4,7 @@
 	//==== structure central
 	.site-main {
 		padding: 3.5em 2em;
-		// @include mq(lap) { padding: 1.5em 1em; }
+		@include mq(lap) { padding: 1.5em 1em; }
 		@include mq(tablet) { padding: 0.5em 0.5em 1em; }
 		@include mq(phone) { padding: 0 0.5em 1.5em; }
 	}
@@ -13,10 +13,10 @@
 	.block__central {
 		padding: 0;
 		position: relative;
-		z-index:99999999;
-		@include mq(lap) { position: absolute; top:2em; left: 2.5%; right: 2.5%; width: 95%; margin-right: 0; }
-		@include mq(tablet) { position: absolute; top:2em; left: 1.2%; right: 1.2%; width: 97.6%; margin-right: 0; }
-		@include mq(phone) { position: absolute; top:1em; left: 1%; right: 1%; width: 98%; margin-right: 0; }
+		z-index:99999;
+		@include mq(lap) { position: absolute; top:1.5em; left: 1%; right: 1%; width: 98%; margin-right: 0; }
+		@include mq(tablet) { position: absolute; top:1em; left: 1.2%; right: 1.2%; width: 97.6%; margin-right: 0; }
+		@include mq(phone) { position: relative; top:1em; left: 0.5%; right: 0.5%; width: 99%; margin-right: 0; margin-bottom: 1em;}
 
 		.entry-header {
 			margin:1.4em 0 0.7em;
@@ -63,8 +63,8 @@
 		width:30%;
 		vertical-align: top;
 		padding: 1.5em 1.25em 1em;
-		// @include mq(lap) { min-height: 500px;}
-		@include mq(tablet) { width: 40%; padding: 1.5em 1em 0; }
+		@include mq(lap) { width: 40%;}
+		@include mq(tablet) { width: 45%; padding: 1.5em 1em 0; }
 		@include mq(phone) { width: 100%; padding: 1.5em 1em 1em; }
 	}
 
@@ -72,8 +72,8 @@
 		display: inline-block;
 		width:70%;
 		vertical-align: top;	
-		// @include mq(lap) { width: 100%; }
-		@include mq(tablet) { width: 60%; }
+		@include mq(lap) { width: 60%; }
+		@include mq(tablet) { width: 55%; }
 		@include mq(phone) { width: 100%; }
 	}
 
@@ -82,6 +82,7 @@
 
 		.block__university--img {
 			display: block;
+			@include mq(desk) {min-height: 450px;}
 			@include mq(tablet) {
 				max-width:none;
 				height: 325px;
@@ -91,9 +92,10 @@
 	}
 
 	.block__university--logo {
-		width: 45%;
+		width: 40%;
 		margin-top: 1.5em;
-		@include mq(tablet) { width: 40%; margin-top: 0.8em;}
+		@include mq(lap) { width: 35%; margin-top: 1em; }
+		@include mq(tablet) { width: 30%; margin-top: 0.8em;}
 
 	}
 
@@ -133,7 +135,6 @@
 		cursor: pointer;
 		stroke: #ff0000;
 	}
-
 }
 
 #tooltip-madrid {
@@ -200,4 +201,68 @@
 		stroke-width: 10px;
 		// opacity: 0.5;
 	}
+}
+
+
+.wrapper-carte {
+	@include mq(phone) { position: absolute; }
+}
+
+.block__home--mobile {
+	display:none;
+	@include mq(phone) { display:block; position: relative; top:0.3em;}
+	
+	.bt-home--mobile {
+		padding: 6em 0 0.5em;
+		margin-bottom: 1%;
+		color:#fff;
+		text-transform: uppercase;
+		cursor: pointer;
+		transition: .2s all linear;
+		@include font-size( 14px );
+		@include simple-grid( 3 , 1% );
+
+		&:hover {
+			background-color: #6c6c6c;
+		}
+
+		span {
+			display: block;
+			text-transform: none;
+			@include font-size( 11px );
+		}
+	}
+
+	.bt-home--mobile-spain {
+		background: url('../../../img/country/spain.svg') center 1em no-repeat $color-principal;;
+	}
+
+	.bt-home--mobile-france {
+		background: url('../../../img/country/france.svg') center 1em no-repeat $color-principal;;
+	}
+
+	.bt-home--mobile-germany {
+		background: url('../../../img/country/germany.svg') center 1em no-repeat $color-principal;;
+	}
+
+	.bt-home--mobile-hungary {
+		background: url('../../../img/country/hungary.svg') center 1em no-repeat $color-principal;;
+	}
+
+	.bt-home--mobile-finland {
+		background: url('../../../img/country/finland.svg') center 1em no-repeat $color-principal;;
+	}
+
+	.bt-home--mobile-italy {
+		background: url('../../../img/country/italy.svg') center 1em no-repeat $color-principal;;
+	}
+
+	.bt-home--mobile-japan {
+		background: url('../../../img/country/japan.svg') center 1em no-repeat $color-principal;;
+	}
+
+	.bt-home--mobile-korea {
+		background: url('../../../img/country/korea.svg') center 1em no-repeat $color-principal;;
+	}
+
 }

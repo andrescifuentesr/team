@@ -18,10 +18,12 @@
 
 		&::before {
 			left: -1.5em;
+			@include mq(tablet) { left: -1em; }			
 		}
 
 		&::after {
 			left: 1.5em;
+			@include mq(tablet) { left: 1em; }			
 		}
 	}
 
@@ -44,10 +46,12 @@
 
 		&::before {
 			left: -1.5em;
+			@include mq(tablet) { left: -1em; }
 		}
 
 		&::after {
 			left: 1.5em;
+			@include mq(tablet) { left: 1em; }
 		}
 	}
 }

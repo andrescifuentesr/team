@@ -13,10 +13,15 @@
 	text-align:center;
 	// min-height:120px;
 	margin-bottom: 0.5%;
-	@include simple-grid( 4, 0.5%);
+	transition: .2s all linear;
+	@include simple-grid( 4, 0.5%);	
 	@include mq(lap) { @include simple-grid( 3, 0.5%); }
 	@include mq(tablet) { @include simple-grid( 3, 0.5%); }
 	@include mq(phone) { @include simple-grid( 2, 0.5%); }
+
+	&:hover {
+		background: darken( #f2f2f2, 10%);
+	}
 
 	a {
 		display: block;
@@ -28,7 +33,7 @@
 		padding: 1.5em 1em;
 		max-height: 120px;
 		width: auto;
-		@include mq(phone) { max-height: 95px; padding: 1em 1em; }
+		@include mq(phone) { max-height: 120px; padding: 2em 0em;}
 	}
 }
 

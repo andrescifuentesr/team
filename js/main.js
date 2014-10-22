@@ -15,7 +15,7 @@ jQuery(document).ready(function( $ ) {
 		theme: 'tooltipster-blue',
 		position: 'top-left',
 		interactive: true,
-		content: $('<button id="bt_modal" data-modal="142"><p class="tool-university">University of Trento</p><span class="tool-city">PARIS</span> - <span class="tool-country">France</span></button>')
+		content: $('<button id="bt_modal" data-modal="142"><p class="tool-university">Université Pierre et Marie Curie</p><span class="tool-city">PARIS</span> - <span class="tool-country">France</span></button>')
 	});
 
 	// berlin
@@ -113,6 +113,13 @@ jQuery(document).ready(function( $ ) {
 	$('.bt_modal-close').on('click', function (){
 		var modal_close = $(this).attr("data-modal-close");
 		$('#block__central-'+modal_close).addClass('block__central--inactive');
+	});
+
+	//modal home for mobile
+	$('.bt-home--mobile').on('click', function (){
+		var modal = $(this).attr("data-modal");
+		$('.block__central').addClass('block__central--inactive');
+		$('#block__central-'+modal).removeClass('block__central--inactive');
 	});
 
 	//=================
