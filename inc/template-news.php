@@ -7,7 +7,7 @@
 	<div class="block__news">
 		
 		<h1 class="entry-title--news">
-			<a href="http://localhost:8888/team/news/"><?php _e( 'News', 'team' ); ?></a>
+			<a href="http://www.team-mundus.eu/news/"><?php _e( 'News', 'team' ); ?></a>
 		</h1>
 
 		<?php

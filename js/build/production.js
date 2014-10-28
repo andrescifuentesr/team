@@ -1560,7 +1560,7 @@ jQuery(document).ready(function( $ ) {
 		theme: 'tooltipster-blue',
 		position: 'top-left',
 		interactive: true,
-		content: $('<button id="bt_modal" data-modal="134"><p class="tool-university">Carlos III University of Madrid</p><span class="tool-city">GETAFE (MADRID)</span> - <span class="tool-country">Spain</span></button>')
+		content: $('<button id="bt_modal" data-modal="134"><p class="tool-university">Carlos III University of Madrid</p><span class="tool-city">GETAFE (MADRID)</span> - <span class="tool-country">Spain</span><p class="see-more see-more-bleu">See more</p></button>')
 	});
 
 	// paris
@@ -1568,7 +1568,7 @@ jQuery(document).ready(function( $ ) {
 		theme: 'tooltipster-blue',
 		position: 'top-left',
 		interactive: true,
-		content: $('<button id="bt_modal" data-modal="142"><p class="tool-university">Université Pierre et Marie Curie</p><span class="tool-city">PARIS</span> - <span class="tool-country">France</span></button>')
+		content: $('<button id="bt_modal" data-modal="142"><p class="tool-university">Université Pierre et Marie Curie</p><span class="tool-city">PARIS</span> - <span class="tool-country">France</span><p class="see-more see-more-bleu">See more</p></button>')
 	});
 
 	// berlin
@@ -1576,7 +1576,7 @@ jQuery(document).ready(function( $ ) {
 		theme: 'tooltipster-blue',
 		position: 'top-left',
 		interactive: true,
-		content: $('<button id="bt_modal" data-modal="131"><p class="tool-university">Technische Universität Berlin</p><span class="tool-city">BERLIN</span> - <span class="tool-country">Germany</span></button>')
+		content: $('<button id="bt_modal" data-modal="131"><p class="tool-university">Technische Universität Berlin</p><span class="tool-city">BERLIN</span> - <span class="tool-country">Germany</span><p class="see-more see-more-bleu">See more</p></button>')
 	});
 
 	// eotvos
@@ -1584,7 +1584,7 @@ jQuery(document).ready(function( $ ) {
 		theme: 'tooltipster-blue',
 		position: 'top-left',
 		interactive: true,
-		content: $('<button id="bt_modal" data-modal="113"><p class="tool-university">Eötvös Loránd University Faculty of Informatics</p><span class="tool-city">BUDAPEST</span> - <span class="tool-country">Hungary</span></button>')
+		content: $('<button id="bt_modal" data-modal="113"><p class="tool-university">Eötvös Loránd University Faculty of Informatics</p><span class="tool-city">BUDAPEST</span> - <span class="tool-country">Hungary</span><p class="see-more see-more-bleu">See more</p></button></button>')
 	});
 
 	// Aalto
@@ -1592,7 +1592,7 @@ jQuery(document).ready(function( $ ) {
 		theme: 'tooltipster-blue',
 		position: 'top-left',
 		interactive: true,
-		content: $('<button id="bt_modal" data-modal="104"><p class="tool-university">Aalto University</p><span class="tool-city">ESPOO</span> - <span class="tool-country">Finland</span></button>')
+		content: $('<button id="bt_modal" data-modal="104"><p class="tool-university">Aalto University</p><span class="tool-city">ESPOO</span> - <span class="tool-country">Finland</span><p class="see-more see-more-bleu">See more</p></button>')
 	});
 
 	// trento
@@ -1600,7 +1600,7 @@ jQuery(document).ready(function( $ ) {
 		theme: 'tooltipster-blue',
 		position: 'top-left',
 		interactive: true,
-		content: $('<button id="bt_modal" data-modal="138"><p class="tool-university">University of Trento</p><span class="tool-city">TRENTO</span> - <span class="tool-country">Italy</span></button>')
+		content: $('<button id="bt_modal" data-modal="138"><p class="tool-university">University of Trento</p><span class="tool-city">TRENTO</span> - <span class="tool-country">Italy</span><p class="see-more see-more-bleu">See more</p></button>')
 	});
 
 	// Keio University KANAGAWA - Japan
@@ -1608,7 +1608,7 @@ jQuery(document).ready(function( $ ) {
 		theme: 'tooltipster-red',
 		position: 'top-right',
 		interactive: true,
-		content: $('<button id="bt_modal" data-modal="123"><p class="tool-university">Keio University</p><span class="tool-city">KANAGAWA</span> - <span class="tool-country">Japan</span></button>')
+		content: $('<button id="bt_modal" data-modal="123"><p class="tool-university">Keio University</p><span class="tool-city">KANAGAWA</span> - <span class="tool-country">Japan</span><p class="see-more see-more-red">See more</p></button>')
 	});
 
 	// The University of Tokyo TOKYO - Japan
@@ -1616,7 +1616,7 @@ jQuery(document).ready(function( $ ) {
 		theme: 'tooltipster-red',
 		position: 'top-right',
 		interactive: true,
-		content: $('<button id="bt_modal" data-modal="145"><p class="tool-university">The University of Tokyo</p><span class="tool-city">TOKYO</span> - <span class="tool-country">Japan</span></button>')
+		content: $('<button id="bt_modal" data-modal="145"><p class="tool-university">The University of Tokyo</p><span class="tool-city">TOKYO</span> - <span class="tool-country">Japan</span><p class="see-more see-more-red">See more</p></button>')
 	});
 
 	// Nara Institute of Science and Technology NARA - Japan
@@ -1624,7 +1624,7 @@ jQuery(document).ready(function( $ ) {
 		theme: 'tooltipster-red',
 		position: 'top-right',
 		interactive: true,
-		content: $('<button id="bt_modal" data-modal="127"><p class="tool-university">Nara Institute of Science and Technology</p><span class="tool-city">NARA</span> - <span class="tool-country">Japan</span></button>')
+		content: $('<button id="bt_modal" data-modal="127"><p class="tool-university">Nara Institute of Science and Technology</p><span class="tool-city">NARA</span> - <span class="tool-country">Japan</span><p class="see-more see-more-red">See more</p></button>')
 	});	
 
 	// GIST (Gwangju Institute of Science & Technology) GWANGJU - KOREA
@@ -1632,7 +1632,7 @@ jQuery(document).ready(function( $ ) {
 		theme: 'tooltipster-red',
 		position: 'top-right',
 		interactive: true,
-		content: $('<button id="bt_modal" data-modal="117"><p class="tool-university">GIST (Gwangju Institute of Science & Technology)</p><span class="tool-city">GWANGJU</span> - <span class="tool-country">KOREA</span></button>')
+		content: $('<button id="bt_modal" data-modal="117"><p class="tool-university">Gwangju Institute of Science & Technology</p><span class="tool-city">GWANGJU</span> - <span class="tool-country">KOREA</span><p class="see-more see-more-red">See more</p></button>')
 	});		
 
 	// Chungnam National University DAEJEON - South KOREA
@@ -1641,7 +1641,7 @@ jQuery(document).ready(function( $ ) {
 		position: 'top-right',
 		multiple: true,
 		interactive: true,
-		content: $('<button id="bt_modal" data-modal="110"><p class="tool-university">Chungnam National University</p><span class="tool-city">DAEJEON</span> - <span class="tool-country">KOREA</span></button>')
+		content: $('<button id="bt_modal" data-modal="110"><p class="tool-university">Chungnam National University</p><span class="tool-city">DAEJEON</span> - <span class="tool-country">KOREA</span><p class="see-more see-more-red">See more</p></button>')
 	});	
 
 	// KAIST DAEJEON - Republic of Korea
@@ -1650,7 +1650,7 @@ jQuery(document).ready(function( $ ) {
 		position: 'bottom-right',
 		multiple: true,
 		interactive: true,
-		content: $('<button id="bt_modal" data-modal="120"><p class="tool-university">KAIST (Korea Advanced Institute of Science and Technology)</p><span class="tool-city">DAEJEON</span> - <span class="tool-country">KOREA</span></button>')
+		content: $('<button id="bt_modal" data-modal="120"><p class="tool-university">Korea Advanced Institute of Science and Technology</p><span class="tool-city">DAEJEON</span> - <span class="tool-country">KOREA</span><p class="see-more see-more-red">See more</p></button>')
 	});
 
 	//=================

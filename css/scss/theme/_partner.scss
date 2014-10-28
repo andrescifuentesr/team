@@ -9,6 +9,7 @@
 		display: inline-block;
 		vertical-align: middle;
 		width: 35%;
+		padding-right: 1em;
 		@include mq(phone) { width:100% }
 	}
 
@@ -30,7 +31,8 @@
 		}
 
 		a {
-			@include font-size( 14px );
+			// @include font-size( 14px );
+			color:#515151;	
 		}
 	}
 }

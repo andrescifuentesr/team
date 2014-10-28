@@ -30,10 +30,10 @@
 	img {
 		display: block;
 		margin: 0 auto;
-		padding: 1.5em 1em;
-		max-height: 120px;
+		padding: 1.4em 0;
+		max-height: 130px;
 		width: auto;
-		@include mq(phone) { max-height: 120px; padding: 2em 0em;}
+		@include mq(phone) { max-height: 99px; padding: 1.2em 0.25em;}
 	}
 }
 

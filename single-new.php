@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<div class="block__breadcrumb">
 				<p id="breadcrumbs">
-					<span> <span>News</span> > <span><?php the_title(); ?></span> </span>
+					<span> <span><a href="http://www.team-mundus.eu/news/">News</a></span> > <span><?php the_title(); ?></span> </span>
 				</p>
 			</div>
 

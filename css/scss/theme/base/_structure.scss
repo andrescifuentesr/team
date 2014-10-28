@@ -10,7 +10,7 @@
 	width: 100%;
 	min-height: 627px;
 	height:100%;
-	max-width:1400px;
+	max-width:1440px;
 	margin: 0 auto;
 	@include mq(lap) { padding: 1em 1em; min-height: 540px;  }
 	@include mq(tablet) { padding: 1em 1em; min-height: 500px; }
@@ -58,7 +58,7 @@
 	.site-main {
 
 		p, ul, ol {
-			font-size: 0.7em;
+			font-size: 0.75em;
 		}
 
 	}
@@ -165,7 +165,7 @@
 			left: 100%;
 			top: 0;
 			border-left: 0px solid #fff;
-			border-bottom: 34px solid #fff;
+			border-bottom: 36px solid #fff;
 			border-right: 20px solid transparent;
 			@include mq(tablet) { display: none;}
 			@include mq(phone) { display: none;}

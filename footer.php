@@ -14,7 +14,9 @@
 		<div class="site-info">
 
 			<div class="site-info__erasmus">
-				<img src="<?php bloginfo('template_directory'); ?>/img/logo-erasmus.svg"  alt="Logo Erasmus Mundus" />
+				<a href="http://eacea.ec.europa.eu/erasmus_mundus/" target="_blank">
+					<img src="<?php bloginfo('template_directory'); ?>/img/logo-erasmus.svg"  alt="Logo Erasmus Mundus" />
+				</a>
 			</div><!--
 				  
 			--><div class="site-info__menu">
@@ -26,11 +28,24 @@
 			</div>
 
 		</div><!-- .site-info -->
-		<p class="site-info__mention">Mentions Légales - Design : Thomas La Blanc / Antoine Marinot -  Développment : Andres Cifuentes</p>
+		<p class="site-info__mention">Mentions Légales - Design : <a href="http://inkcorp.fr/" target="_blank">Thomas Le Blanc</a> / 
+			<a href="http://amarinotportfolio.fr/" target="_blank">Antoine Marinot</a> -  
+			Développment : <a href="http://www.cuyabroweb.com/" target="_blank">Andres Cifuentes</a></p>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56162081-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </body>
 </html>

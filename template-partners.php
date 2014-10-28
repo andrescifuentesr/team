@@ -45,11 +45,8 @@ get_header(); ?>
 
 
 							--><div class="block__partner--texte">
-									<p><?php the_title(); ?> - <span><?php the_field('partner_country'); ?></span></p>
-									<a href="<?php the_field('partner_country_link'); ?>" target="_blank"><?php the_field('partner_country_link'); ?></a>
+									<p><a href="<?php the_field('partner_country_link'); ?>" target="_blank"><?php the_title(); ?></a> - <span><?php the_field('partner_country'); ?></span></p>
 								</div>
-
-
 
 							</div>
 

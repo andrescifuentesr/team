@@ -41,7 +41,7 @@ add_filter('excerpt_more', 'new_excerpt_more');
 
 //Control Excerpt Length using Filters
 function custom_excerpt_length( $length ) {
-	return 35;
+	return 30;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
@@ -75,31 +75,19 @@ add_action( 'admin_head', 'add_menu_icons_styles' );
 //fx for adding .current-menu-parent to custom post type (univ)
 //==================================================================
  
-// add_filter( 'nav_menu_css_class', 'nav_parent_class', 10, 2 );
+add_filter('nav_menu_css_class', 'current_type_nav_class', 10, 2);
+function current_type_nav_class($classes, $item) {
+    // Get post_type for this post
+    $post_type = get_query_var('post_type');
 
-// function nav_parent_class( $classes, $item ) {
-// 	$cpt_name = 'university';
-// 	$parent_slug = 'community';
+    // Go to Menus and add a menu class named: {custom-post-type}-menu-item
+    // This adds a 'current_page_parent' class to the parent menu item
+	//Add 'uniersity-menu-item' to parent by Admin Panel
+    if( in_array( $post_type.'-menu-item', $classes ) )
+        array_push($classes, 'current-menu-parent');
 
-// 	if ( $cpt_name == get_post_type() && ! is_admin() ) {
-// 		global $wpdb;
-
-// 		// remove any active classes from nav (blog is usually gets the currept_page_parent class on cpt single pages/posts)
-// 		$classes = array_filter($classes, ($class == 'current_page_item' || $class == 'current_page_parent' || $class == 'current_page_ancestor'  || $class == 'current-menu-item' ? false : true ));
-
-// 		// get page info
-// 		// - we really just want the post_name so it cane be compared to the post type slug
-// 		$page = get_page_by_title( $item->title, OBJECT, 'page' );
-
-// 		// check if slug matches post_name
-// 		if( $page->post_name == $parent_slug ) {
-// 			$classes[] = 'current-menu-parent';
-// 		}
-
-// 	}
-
-// 	return $classes;
-// }
+    return $classes;
+}
 
 //-------------------------------------------------  
 // Yoast plugin Filter

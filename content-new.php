@@ -13,4 +13,6 @@
 		<?php the_content(); ?>
 	</div><!-- .entry-content -->
 
+	<a href="http://www.team-mundus.eu/news/" class="read-more">See More News</a>
+
 </article><!-- #post-## -->

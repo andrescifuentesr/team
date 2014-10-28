@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<div class="block__breadcrumb">
 				<p id="breadcrumbs">
-					<span> <span>Community</span> > <span>Consortium Partners</span> > <span><?php the_title(); ?></span> </span>
+					<span> <span>Community</span> > <span><a href="<?php echo get_permalink( 17 ); ?>">Consortium Partners</a></span> > <span><?php the_title(); ?></span> </span>
 				</p>
 			</div>
 

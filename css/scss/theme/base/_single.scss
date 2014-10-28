@@ -14,19 +14,33 @@
 			border-bottom: none;
 			margin: 0;
 			padding: 0;
+			font-family: 'ralewaybold';
+			text-transform: uppercase;
+			@include font-size( 18px );
+		}
+
+		.entry-title--city {
 			font-family: 'ralewayregular';
 			@include font-size( 16px );
 		}
 
-		.entry-title--city {
-			text-transform: uppercase;
-			font-family: 'ralewaybold';			
-			@include font-size( 18px );
-		}
-
 		.entry-title--country {
 			font-family: 'ralewaymedium';
-			@include font-size( 18px );
+			@include font-size( 16px );
+		}		
+
+		.entry-content a {
+			-ms-word-break: break-all;
+
+			/* Be VERY careful with this, breaks normal words wh_erever */
+			word-break: break-all;
+
+			/* Non standard for webkit */
+			word-break: break-word;
+
+			-webkit-hyphens: auto;
+			-moz-hyphens: auto;
+			hyphens: auto;
 		}
 
 		h4 {

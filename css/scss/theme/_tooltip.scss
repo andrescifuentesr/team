@@ -20,6 +20,41 @@
 	line-height: 16px;
 	@include font-size( 13px );
 
+	.see-more {
+		margin-top: .5em;
+		padding-left: 1em;
+		text-decoration: underline;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			z-index: 100;
+			top:50%;
+			left:0em;
+			transform: translate(0, -50%);
+			border-top: 5px solid transparent;
+			border-bottom: 5px solid transparent;
+			transition: 0.1s all linear;
+		}
+	}
+
+	.see-more-bleu {
+		color:$color-principal;
+
+		&::before {
+			border-left: 5px solid $color-principal;
+		}
+	}
+
+	.see-more-red {
+		color:$color-red;
+
+		&::before {
+			border-left: 5px solid $color-red;
+		}
+	}
+
 	.tool-university {
 		font-family: 'ralewaybold';
 		margin-bottom: 0;

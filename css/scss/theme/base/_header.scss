@@ -1,7 +1,7 @@
 .site-header {
 	width:100%;
 	background: $color-principal;
-	border-bottom: 1px solid #b3b3b3;
+	// border-bottom: 1px solid #b3b3b3;
 
 	.site-branding {
 
@@ -48,7 +48,7 @@
 	position: relative;
 	padding: 1.5em 0;
 	width:20%;
-	z-index:30000;
+	z-index:3000;
 	@include mq(phone) {
 		width: 100%;
 		float: none;
@@ -64,9 +64,11 @@
 	color:#fff;
 	font-family: 'dosisregular';
 	text-transform: uppercase;
-	@include font-size( 26px );
-	@include mq(tablet) { 
-		@include font-size( 20px );
+	letter-spacing: 2px;
+	@include font-size( 24px );
+	@include mq(tablet) {
+		padding: 1.8em 0;
+		@include font-size( 18px );
 	}
 	@include mq(phone) {
 		padding: 0.5em 0 0.5em 2em;
@@ -128,7 +130,7 @@
 	display: none;
 	float: left;
 	position: absolute;
-	top: 9.4em;
+	top: 9.15em;
 	left: 0;
 	z-index: 99999;
 	@include mq(tablet) { top: 8.1em }
@@ -177,6 +179,7 @@
 	text-transform: uppercase;
 	padding: 0.5em 0 0.5em 1em;
 	transition: 0.2s all ease-out;
+	letter-spacing: 0;
 	@include font-size( 16px );
 	@include mq(tablet) { padding-left: 0.5em }
 	@include mq(phone) { padding-left: 4em }

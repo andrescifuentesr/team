@@ -3,20 +3,25 @@
 	//=========================
 	//==== structure central
 	.site-main {
-		padding: 3.5em 2em;
+		// max-width:1400px;
+		max-width:1440px;
+		padding: 3.5em 2em 3.5em 0;
 		@include mq(lap) { padding: 1.5em 1em; }
 		@include mq(tablet) { padding: 0.5em 0.5em 1em; }
-		@include mq(phone) { padding: 0 0.5em 1.5em; }
+		@include mq(phone) { padding: 0.5em 0.5em 1.5em; }
 	}
 
 
 	.block__central {
 		padding: 0;
 		position: relative;
-		z-index:99999;
-		@include mq(lap) { position: absolute; top:1.5em; left: 1%; right: 1%; width: 98%; margin-right: 0; }
-		@include mq(tablet) { position: absolute; top:1em; left: 1.2%; right: 1.2%; width: 97.6%; margin-right: 0; }
-		@include mq(phone) { position: relative; top:1em; left: 0.5%; right: 0.5%; width: 99%; margin-right: 0; margin-bottom: 1em;}
+		z-index:999;
+		width: 71.5%;
+		margin-right: 1%;
+		margin-left: 2.5%;
+		@include mq(lap) { position: absolute; top:1.5em; left: 1.5%; right: 1.5%; width: 97%; margin: 0; }
+		@include mq(tablet) { position: absolute; top:2.5em; left: 1.2%; right: 1.2%; width: 97.6%; margin: 0; }
+		@include mq(phone) { position: relative; top:1em; left: 0.5%; right: 0.5%; width: 99%; margin: 0 0 1em; }
 
 		.entry-header {
 			margin:1.4em 0 0.7em;
@@ -31,9 +36,20 @@
 			border-bottom: none;
 			margin: 0;
 			padding: 0;
+			font-family: 'ralewaybold';
+			text-transform: uppercase;
+			@include font-size( 16px );
+		}
+
+		.entry-title--city {
 			font-family: 'ralewayregular';
 			@include font-size( 14px );
 		}
+
+		.entry-title--country {
+			font-family: 'ralewaymedium';
+			@include font-size( 14px );
+		}	
 
 		.entry-content {
 			margin: 0;
@@ -60,20 +76,20 @@
 
 	.block__central--home-text {
 		display: inline-block;
-		width:30%;
+		width:35%;
 		vertical-align: top;
-		padding: 1.5em 1.25em 1em;
+		padding: 1.5em 1.25em 0.75em;
 		@include mq(lap) { width: 40%;}
-		@include mq(tablet) { width: 45%; padding: 1.5em 1em 0; }
+		@include mq(tablet) { width: 50%; padding: 1.5em 1em 0; }
 		@include mq(phone) { width: 100%; padding: 1.5em 1em 1em; }
 	}
 
 	.block__central--home-image {
 		display: inline-block;
-		width:70%;
+		width:65%;
 		vertical-align: top;	
 		@include mq(lap) { width: 60%; }
-		@include mq(tablet) { width: 55%; }
+		@include mq(tablet) { width: 50%; }
 		@include mq(phone) { width: 100%; }
 	}
 
@@ -85,7 +101,7 @@
 			@include mq(desk) {min-height: 450px;}
 			@include mq(tablet) {
 				max-width:none;
-				height: 325px;
+				min-height: 335px;
 				width: 100%;
 			 }
 		}
@@ -94,9 +110,9 @@
 	.block__university--logo {
 		width: 40%;
 		margin-top: 1.5em;
-		@include mq(lap) { width: 35%; margin-top: 1em; }
-		@include mq(tablet) { width: 30%; margin-top: 0.8em;}
-
+		@include mq(lap) { width: 30%; margin-top: 1em; }
+		@include mq(tablet) { width: 30%; margin-top: 0; float: right;}
+		@include mq(phone) { width: 25%; }
 	}
 
 	#bt_modal {
@@ -105,7 +121,7 @@
 		box-shadow:none;
 		display: block;
 		text-align: left;
-		padding: 8px 6em 2em 10px;
+		padding: 8px 6em 0 10px;
 	}
 
 	.bt_modal-close {

@@ -5,13 +5,13 @@
 	left: 50%;
 	width: 60%;
 	max-width: 1000px;
-	min-width: 320px;
+	// min-width: 320px;
 	height: auto;
-	z-index: 2000000;
+	z-index: 20000;
 	visibility: hidden;
 	transform: translateX(-50%) translateY(-50%);
 	@include mq(tablet) { width: 80%;}
-	@include mq(phone) { width: 90%; top: 60%;}
+	@include mq(phone) { width: 90%;}
 
 	.bt_modal__home-close{
 		position: absolute;
@@ -33,6 +33,7 @@
 
 	.logo__erasmus-modal {
 		padding: 1em 0;
+		@include mq(phone) { display:none;}
 	}
 
 	.entry-title {
@@ -40,17 +41,18 @@
 		padding: 0 1em;
 		font-family: 'ralewaybold';
 		@include font-size( 16px );
-
+		@include mq(phone) { padding: 3em 1em 0; }
 	}
 
 	.entry-content {
 		padding: 0.5em 4em 2em;
 		text-align: left;
 		@include mq(tablet) {padding: 0.5em 2em 2em;}
-		@include mq(phone) { padding:0.5em 1em 2em; }
+		@include mq(phone) { padding:0 1em 1em; }
 	}
 
 	.block__central--home--image {
+		@include mq(phone) { display:none; }
 		img {display: block;}
 	}
 
@@ -63,7 +65,7 @@
 	visibility: hidden;
 	top: 0;
 	left: 0;
-	z-index: 1000000;
+	z-index: 10000;
 	opacity: 0;
 	background: rgba(0,0,0,0.8);
 	transition: all 0.3s;

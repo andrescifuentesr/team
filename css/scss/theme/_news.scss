@@ -3,8 +3,9 @@
 	.block__news {
 		background: $color-principal;
 		text-align: left;
-		padding: 1em;
+		padding: 0.8em 1em;
 		color:#fff;
+		min-height: 392px;
 	}
 
 	.entry-title--news {
@@ -20,7 +21,8 @@
 
 	.block--article__news {
 		line-height: 1em;
-		margin-bottom: 0.5em;
+		// margin-bottom: 0.5em;
+		margin-bottom: 1.25em;
 
 		.entry-title {
 			margin-bottom: 0;
@@ -33,7 +35,7 @@
 		}
 
 		.entry-content {
-			margin: 0.5em 0 0;
+			margin: 0.25em 0 0;
 
 			p {margin:0;}
 		}

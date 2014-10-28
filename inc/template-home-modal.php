@@ -17,7 +17,7 @@
 
 			<button class="bt_modal__home-close">X</button>
 
-			<img src="<?php bloginfo('template_directory'); ?>/img/logo-team-gris.svg"  class="logo__erasmus-modal" alt="Logo Team" />
+			<img src="<?php bloginfo('template_directory'); ?>/img/logo-team-blue.svg"  class="logo__erasmus-modal" alt="Logo Team" />
 
 			<header class="entry-header">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
