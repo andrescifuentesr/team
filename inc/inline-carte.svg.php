@@ -1563,6 +1563,7 @@
 				c0-2.622,2.13-4.75,4.751-4.75C836.328,293.23,838.454,295.358,838.454,297.98z"/>
 			<circle fill="#B3B3B3" cx="833.704" cy="309.565" r="4.75"/>
 			<circle fill="#B3B3B3" cx="845.288" cy="309.565" r="4.75"/>
+			<circle  fill="#B3B3B3" cx="845.25" cy="321.147" r="4.75"/>
 			<path fill="#B3B3B3" d="M838.454,321.153c0,2.617-2.126,4.75-4.75,4.75c-2.621,0-4.751-2.133-4.751-4.75
 				c0-2.629,2.13-4.758,4.751-4.758C836.328,316.396,838.454,318.524,838.454,321.153z"/>
 			<path fill="#B3B3B3" d="M826.871,332.733c0,2.619-2.128,4.748-4.751,4.748s-4.75-2.129-4.75-4.748c0-2.627,2.127-4.758,4.75-4.758
@@ -4312,13 +4313,12 @@
 		<circle class="tooltip-point" id="tooltip-trento" stroke="#FF0000" stroke-width="0" fill="#FF0000" cx="300.847" cy="309.564" r="4.753"/>
 		<animate xlink:href="#tooltip-trento" attributeName="stroke-width" values="0;4;4;0" dur="2s" begin="2.5s" repeatCount="indefinite" fill="freeze" id="uni-radio-6"/>
 
-		<!-- Keio University KANAGAWA - Japan -->
-		<circle class="tooltip-point" id="tooltip-keio" stroke="#FF0000" stroke-width="0" fill="#FF0000" cx="833.666" cy="332.729" r="4.75"/>
-		<animate xlink:href="#tooltip-keio" attributeName="stroke-width" values="0;4;4;0" dur="2s" begin="1s" repeatCount="indefinite" fill="freeze" id="uni-radio-7"/>
 
 		<!-- The University of Tokyo TOKYO - Japan -->
-		<circle class="tooltip-point" id="tooltip-tokyo" stroke="#FF0000" stroke-width="0" fill="#FF0000" cx="845.25" cy="321.147" r="4.75"/>
-		<animate xlink:href="#tooltip-tokyo" attributeName="stroke-width" values="0;4;4;0" dur="2s" begin="3.5s" repeatCount="indefinite" fill="freeze" id="uni-radio-8"/>
+		<!-- Keio University TOKYO - Japan -->
+		<circle class="tooltip-point" id="tooltip-tokyo" stroke="#FF0000" stroke-width="0" fill="#FF0000" cx="833.666" cy="332.729" r="4.75"/>
+		<animate xlink:href="#tooltip-keio" attributeName="stroke-width" values="0;4;4;0" dur="2s" begin="1s" repeatCount="indefinite" fill="freeze" id="uni-radio-7"/>
+
 
 		<!--  Nara Institute of Science and Technology NARA - Japan -->
 		<path class="tooltip-point" id="tooltip-nara" stroke="#FF0000" stroke-width="0" fill="#FF0000" d="M826.836,344.313c0,2.627-2.127,4.75-4.75,4.75c-2.625,0-4.755-2.123-4.755-4.75

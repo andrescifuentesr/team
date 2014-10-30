@@ -50,22 +50,6 @@ jQuery(document).ready(function( $ ) {
 		content: $('<button id="bt_modal" data-modal="138"><p class="tool-university">University of Trento</p><span class="tool-city">TRENTO</span> - <span class="tool-country">Italy</span><p class="see-more see-more-bleu">See more</p></button>')
 	});
 
-	// Keio University KANAGAWA - Japan
-	jQuery('#tooltip-keio').tooltipster({
-		theme: 'tooltipster-red',
-		position: 'top-right',
-		interactive: true,
-		content: $('<button id="bt_modal" data-modal="123"><p class="tool-university">Keio University</p><span class="tool-city">KANAGAWA</span> - <span class="tool-country">Japan</span><p class="see-more see-more-red">See more</p></button>')
-	});
-
-	// The University of Tokyo TOKYO - Japan
-	jQuery('#tooltip-tokyo').tooltipster({
-		theme: 'tooltipster-red',
-		position: 'top-right',
-		interactive: true,
-		content: $('<button id="bt_modal" data-modal="145"><p class="tool-university">The University of Tokyo</p><span class="tool-city">TOKYO</span> - <span class="tool-country">Japan</span><p class="see-more see-more-red">See more</p></button>')
-	});
-
 	// Nara Institute of Science and Technology NARA - Japan
 	jQuery('#tooltip-nara').tooltipster({
 		theme: 'tooltipster-red',
@@ -73,6 +57,24 @@ jQuery(document).ready(function( $ ) {
 		interactive: true,
 		content: $('<button id="bt_modal" data-modal="127"><p class="tool-university">Nara Institute of Science and Technology</p><span class="tool-city">NARA</span> - <span class="tool-country">Japan</span><p class="see-more see-more-red">See more</p></button>')
 	});	
+
+	// Keio University TOKYO - Japan
+	jQuery('#tooltip-tokyo').tooltipster({
+		theme: 'tooltipster-red',
+		position: 'top-right',
+		multiple: true,
+		interactive: true,
+		content: $('<button id="bt_modal" data-modal="123"><p class="tool-university">Keio University</p><span class="tool-city">TOKYO</span> - <span class="tool-country">Japan</span><p class="see-more see-more-red">See more</p></button>')
+	});
+
+	// The University of Tokyo TOKYO - Japan
+	jQuery('#tooltip-tokyo').tooltipster({
+		theme: 'tooltipster-red-bottom',
+		position: 'bottom-right',
+		multiple: true,
+		interactive: true,
+		content: $('<button id="bt_modal" data-modal="145"><p class="tool-university">The University of Tokyo</p><span class="tool-city">TOKYO</span> - <span class="tool-country">Japan</span><p class="see-more see-more-red">See more</p></button>')
+	});
 
 	// GIST (Gwangju Institute of Science & Technology) GWANGJU - KOREA
 	jQuery('#tooltip-gwangju').tooltipster({

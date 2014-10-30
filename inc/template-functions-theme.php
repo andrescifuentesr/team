@@ -99,6 +99,25 @@ function yoasttobottom() {
 add_filter( 'wpseo_metabox_prio', 'yoasttobottom');
 
 
+//-------------------------------------------------  
+// We deregister wp-members.css
+//-------------------------------------------------
+function my_styles() {
+  wp_deregister_style( 'wp-members' );
+}
+
+add_action( 'wp_print_styles', 'my_styles', 99 );
+
+//-------------------------------------------------  
+// We deregister the dashboard for subscribers
+//-------------------------------------------------
+add_action('after_setup_theme', 'remove_admin_bar');
+
+function remove_admin_bar() {
+	if (!current_user_can('administrator') && !is_admin()) {
+	  show_admin_bar(false);
+	}
+}
 
 // //-------------------------------------------------  
 // //function custome Image

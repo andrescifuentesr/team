@@ -1,0 +1,51 @@
+#wpmem_login {
+	font-size: 0.75em;
+	background: #29abe2;
+	color: #fff;
+	padding: 2em;
+	width: 50%;
+	@include mq(phone) { width: 100%;}
+
+	legend {
+		display: none;
+	}
+
+
+	.username, .password {
+		border: 1px solid $color-principal;
+		border-radius:0;
+		width: 100%;
+		padding: 0.5em 1em;
+		margin: 0 0 1em;
+	}
+
+	.buttons {
+		display: block;
+		position: relative;
+		background: #4d4d4d;
+		padding: 0.75em 3em;
+		color:#fff;
+		text-transform: uppercase;
+		border: none;
+		transition: 0.2s all linear;
+
+		&:hover {
+			background: #6c6c6c;
+		}
+	}
+}
+
+#wpmem_msg {
+	background: #29abe2;
+	color: #fff;
+	padding: 2em;
+	width: 50%;
+	@include mq(phone) { width: 100%;}
+
+	a {
+		background: #fff;
+		padding: 0.5em 1em;
+		text-decoration: none;
+	}
+
+}
