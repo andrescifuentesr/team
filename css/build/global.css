@@ -2942,6 +2942,7 @@ article .tablepress td {
 
 .menu > li > .line-up {
   position: relative;
+  display: block;
   opacity: 0;
   transition: .1s all linear;
 }
@@ -2956,23 +2957,14 @@ article .tablepress td {
   transition: .1s all linear;
 }
 .menu > li > .line-up::before {
-  left: -1.5em;
-}
-@media only screen and (min-width: 44em) and (max-width: 61em) {
-  .menu > li > .line-up::before {
-    left: -1em;
-  }
+  left: 40%;
 }
 .menu > li > .line-up::after {
-  left: 1.5em;
-}
-@media only screen and (min-width: 44em) and (max-width: 61em) {
-  .menu > li > .line-up::after {
-    left: 1em;
-  }
+  left: 60%;
 }
 .menu > li > .line-down {
   position: relative;
+  display: block;
   opacity: 0;
   transition: .1s all linear;
 }
@@ -2988,20 +2980,10 @@ article .tablepress td {
   transition: .1s all linear;
 }
 .menu > li > .line-down::before {
-  left: -1.5em;
-}
-@media only screen and (min-width: 44em) and (max-width: 61em) {
-  .menu > li > .line-down::before {
-    left: -1em;
-  }
+  left: 40%;
 }
 .menu > li > .line-down::after {
-  left: 1.5em;
-}
-@media only screen and (min-width: 44em) and (max-width: 61em) {
-  .menu > li > .line-down::after {
-    left: 1em;
-  }
+  left: 60%;
 }
 
 .main-navigation li:hover .line-up {

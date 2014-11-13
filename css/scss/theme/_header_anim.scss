@@ -2,6 +2,7 @@
 	
 	> .line-up {
 		position: relative;
+		display: block;
 		opacity: 0;
 		transition: .1s all linear;
 
@@ -17,18 +18,17 @@
 		}
 
 		&::before {
-			left: -1.5em;
-			@include mq(tablet) { left: -1em; }			
+			left: 40%;
 		}
 
 		&::after {
-			left: 1.5em;
-			@include mq(tablet) { left: 1em; }			
+			left: 60%;		
 		}
 	}
 
 	> .line-down {
 		position: relative;
+		display: block;
 		opacity: 0;
 		transition: .1s all linear;
 
@@ -45,13 +45,11 @@
 		}
 
 		&::before {
-			left: -1.5em;
-			@include mq(tablet) { left: -1em; }
+			left: 40%;
 		}
 
 		&::after {
-			left: 1.5em;
-			@include mq(tablet) { left: 1em; }
+			left: 60%;
 		}
 	}
 }
