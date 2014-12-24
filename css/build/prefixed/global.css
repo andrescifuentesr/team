@@ -1304,7 +1304,7 @@ h6 {
     text-indent: -9999px;
     height: 80px;
     width: 90px;
-    background: url("../../../img/logo-team-small.svg") center center no-repeat white;
+    background: url("../../../img/logo-team-small.svg") center center no-repeat #fff;
   }
 }
 
@@ -1325,6 +1325,7 @@ h6 {
   margin: 0;
   padding-left: 0;
   text-align: center;
+  width: 100%;
 }
 
 @media (max-width: 44em) {
@@ -1413,7 +1414,7 @@ h6 {
 }
 
 .menu #menu-item-67 {
-  background: url("../../../img/logo-team.svg") center center no-repeat white;
+  background: url("../../../img/logo-team.svg") center center no-repeat #fff;
   text-indent: -9999px;
   -webkit-transition: .2s all linear;
   transition: .2s all linear;
@@ -1618,7 +1619,7 @@ h6 {
     top: 1.2em;
     text-indent: -9999px;
     border: none;
-    background: url("../../../img/icon-menu.svg") center center no-repeat white;
+    background: url("../../../img/icon-menu.svg") center center no-repeat #fff;
   }
 
   .main-navigation ul {
@@ -1842,7 +1843,7 @@ h6 {
 .content-area {
   background: #dddddd;
   text-align: center;
-  background: url("../../../img/bgline.png") #dddddd;
+  background: url("../../../img/bgline.png") #DDDDDD;
 }
 
 .site-main {
@@ -2283,6 +2284,11 @@ h6 {
   margin: 0;
 }
 
+.block__sidebar .block--article__news .entry-content a {
+  text-decoration: underline;
+  color: #fff;
+}
+
 .block__sidebar .block--article__news .read-more {
   color: #4d4d4d;
   text-decoration: underline;
@@ -2521,7 +2527,7 @@ h6 {
 .home #block__central-145 .entry-header,
 .home #block__central-123 .entry-header,
 .home #block__central-127 .entry-header {
-  border-bottom: 4px solid red;
+  border-bottom: 4px solid #FF0000;
 }
 
 .home .block__central--home-text {
@@ -3017,14 +3023,14 @@ article .tablepress td {
 
 .tooltipster-red {
   border-radius: 0px;
-  border-top: 5px solid red;
+  border-top: 5px solid #FF0000;
   background: #fff;
   color: #515151;
 }
 
 .tooltipster-red-bottom {
   border-radius: 0px;
-  border-bottom: 5px solid red;
+  border-bottom: 5px solid #FF0000;
   background: #fff;
   color: #515151;
 }
@@ -3066,11 +3072,11 @@ article .tablepress td {
 }
 
 .tooltipster-content .see-more-red {
-  color: red;
+  color: #FF0000;
 }
 
 .tooltipster-content .see-more-red::before {
-  border-left: 5px solid red;
+  border-left: 5px solid #FF0000;
 }
 
 .tooltipster-content .tool-university {
@@ -3553,3 +3559,5 @@ h6 {
 .clearfix {
   *zoom: 1;
 }
+
+/*# sourceMappingURL=global.css.map */

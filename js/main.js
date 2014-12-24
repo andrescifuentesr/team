@@ -31,7 +31,7 @@ jQuery(document).ready(function( $ ) {
 		theme: 'tooltipster-blue',
 		position: 'top-left',
 		interactive: true,
-		content: $('<button id="bt_modal" data-modal="113"><p class="tool-university">Eötvös Loránd University Faculty of Informatics</p><span class="tool-city">BUDAPEST</span> - <span class="tool-country">Hungary</span><p class="see-more see-more-bleu">See more</p></button></button>')
+		content: $('<button id="bt_modal" data-modal="113"><p class="tool-university">Eötvös Loránd University</p><span class="tool-city">BUDAPEST</span> - <span class="tool-country">Hungary</span><p class="see-more see-more-bleu">See more</p></button></button>')
 	});
 
 	// Aalto

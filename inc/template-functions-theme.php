@@ -39,11 +39,38 @@ function new_excerpt_more( $more ) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+// //Control Excerpt Length using Filters
+// function custom_excerpt_length( $length ) {
+// 	return 30;
+// }
+// add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 //Control Excerpt Length using Filters
-function custom_excerpt_length( $length ) {
-	return 30;
+// AND display links in Excerpt
+function new_wp_trim_excerpt($text) {
+	$raw_excerpt = $text;
+	if ( '' == $text ) {
+		$text = get_the_content('');
+		$text = strip_shortcodes( $text );
+		$text = apply_filters('the_content', $text);
+		$text = str_replace(']]>', ']]>', $text);
+		$text = strip_tags($text, '<a>');
+		$excerpt_length = apply_filters('excerpt_length', 30);
+		$excerpt_more = apply_filters('excerpt_more', ' ' . '[...]');
+		$words = preg_split('/(<a.*?a>)|\n|\r|\t|\s/', $text, $excerpt_length + 1, PREG_SPLIT_NO_EMPTY|PREG_SPLIT_DELIM_CAPTURE );
+		if ( count($words) > $excerpt_length ) {
+			array_pop($words);
+			$text = implode(' ', $words);
+			$text = $text . $excerpt_more;
+			} 
+		else {
+			$text = implode(' ', $words);
+		}
+	}
+	return apply_filters('new_wp_trim_excerpt', $text, $raw_excerpt);
 }
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+remove_filter('get_the_excerpt', 'wp_trim_excerpt');
+add_filter('get_the_excerpt', 'new_wp_trim_excerpt');
 
 
 //======================
@@ -77,16 +104,16 @@ add_action( 'admin_head', 'add_menu_icons_styles' );
  
 add_filter('nav_menu_css_class', 'current_type_nav_class', 10, 2);
 function current_type_nav_class($classes, $item) {
-    // Get post_type for this post
-    $post_type = get_query_var('post_type');
+	// Get post_type for this post
+	$post_type = get_query_var('post_type');
 
-    // Go to Menus and add a menu class named: {custom-post-type}-menu-item
-    // This adds a 'current_page_parent' class to the parent menu item
+	// Go to Menus and add a menu class named: {custom-post-type}-menu-item
+	// This adds a 'current_page_parent' class to the parent menu item
 	//Add 'uniersity-menu-item' to parent by Admin Panel
-    if( in_array( $post_type.'-menu-item', $classes ) )
-        array_push($classes, 'current-menu-parent');
+	if( in_array( $post_type.'-menu-item', $classes ) )
+		array_push($classes, 'current-menu-parent');
 
-    return $classes;
+	return $classes;
 }
 
 //-------------------------------------------------  
