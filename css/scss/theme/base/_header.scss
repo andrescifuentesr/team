@@ -21,6 +21,41 @@
 			}
 		}
 	}
+
+	.site-top_bar {
+		background: #fff;
+		padding: .5em 1em;
+		color: #4d4d4d;
+
+		 @at-root {
+			.site-top_bar__erasmus {
+				display:inline-block;
+				width: 15%;
+				vertical-align:middle;
+				@include mq(phone) { width: 100%; text-align: center;}
+
+				img {
+					display: block;
+				}
+			}
+
+			.site-top_bar__legend {
+				display:inline-block;
+				width: 85%;
+				vertical-align:middle;
+				margin: 0;
+				padding: 0 .5em;
+				@include mq(tablet) { text-align: left; padding-left: 2.5em;}
+				@include mq(phone) { 
+					width: 100%;
+					text-align: center;
+					padding: .5em 0;
+					text-align: left;
+					@include font-size( 20px ); 
+				}
+			}		 	
+		 }
+	}
 }
 
 /*--------------------------------------------------------------
@@ -269,7 +304,7 @@
 		height: 40px;
 		position: absolute;
 		right: 1em;
-		top: 1.2em;
+		top: .5em;
 		text-indent: -9999px;
 		border:none;
 		background: url('../../../img/icon-menu.svg') center center no-repeat #fff;

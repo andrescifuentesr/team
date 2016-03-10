@@ -1,9 +1,5 @@
 <section class="block__sidebar">
 
-	<div class="block__apply">
-		<?php printf( __( '<a href="%1$s" class="bt_apply" target="_blank">Apply Now</a>', 'team' ), "https://emecw.gis.lu.se/apply/?lot=TEAM" ); ?>
-	</div>
-
 	<div class="block__news">
 		
 		<h1 class="entry-title--news">
@@ -26,7 +22,7 @@
 		
 			<article class="block--article__news">
 				<header class="entry-header">
-					<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+					<!-- <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?> -->
 					<span class="entry-date"><?php the_time('j/m/Y'); ?></span>
 				</header>
 				<div class="entry-content">
@@ -36,5 +32,56 @@
 
 		<?php endwhile; ?>
 
+	</div><!-- .block__news -->
+
+
+	<div class="block__news">
+
+		<div class="block__news-apply">
+			<h2 class="entry-title--news">
+				<?php _e( 'To apply', 'team' ); ?>
+			</h2>
+
+			<ul class="entry-list--news">
+				<li>
+					<a href="<?php echo esc_url( __( get_permalink(31), 'team' ) ); ?>"><?php _e( 'Academic offers – open application', 'team' ); ?>
+					</a>
+				</li>
+				<li>
+					<a href="<?php echo esc_url( __( 'http://www.team-mundus.eu/wp-content/uploads/2016/03/TEAM-application-instructions.pdf', 'team' ) ); ?>"><?php _e( 'Application instructions', 'team' ); ?>
+					</a>
+				</li>
+				<li>
+					<a href="<?php echo esc_url( __( 'https://emecw.gis.lu.se/apply/?lot=TEAM', 'team' ) ); ?>"><?php _e( 'Online application portal', 'team' ); ?>
+					</a>					
+				</li>
+			</ul>
+
+		</div>
+
+		<div class="block__news-learn">
+			<h2 class="entry-title--news">
+				<?php _e( 'Learn more about', 'team' ); ?>
+			</h2>
+
+			<ul class="entry-list--news">
+				<li>
+					<a href="<?php echo esc_url( __( get_permalink(17), 'team' ) ); ?>"><?php _e( 'Host universities and laboratories', 'team' ); ?>
+					</a>					
+				</li>
+				<li>
+					<a href="<?php echo esc_url( __( get_permalink(588), 'team' ) ); ?>"><?php _e( 'Profile of our Scholarship Holders', 'team' ); ?>
+					</a>					
+				</li>
+			</ul>
+		</div>
+
+	</div><!-- .block__news -->
+
+
+	<div class="block__apply block__apply--red">
+		<?php printf( __( '<a href="%1$s" target="_blank">
+			<div class="bt_apply">Apply Now </div><div class="bt_apply--deadline">Deadline: 25/04/2016</div></a>', 'team' ), "https://emecw.gis.lu.se/apply/?lot=TEAM" ); ?>
 	</div>
+
 </section>

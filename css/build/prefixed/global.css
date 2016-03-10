@@ -1308,6 +1308,55 @@ h6 {
   }
 }
 
+.site-header .site-top_bar {
+  background: #fff;
+  padding: .5em 1em;
+  color: #4d4d4d;
+}
+
+.site-top_bar__erasmus {
+  display: inline-block;
+  width: 15%;
+  vertical-align: middle;
+}
+
+@media (max-width: 44em) {
+  .site-top_bar__erasmus {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.site-top_bar__erasmus img {
+  display: block;
+}
+
+.site-top_bar__legend {
+  display: inline-block;
+  width: 85%;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0 .5em;
+}
+
+@media only screen and (min-width: 44em) and (max-width: 61em) {
+  .site-top_bar__legend {
+    text-align: left;
+    padding-left: 2.5em;
+  }
+}
+
+@media (max-width: 44em) {
+  .site-top_bar__legend {
+    width: 100%;
+    text-align: center;
+    padding: .5em 0;
+    text-align: left;
+    font-size: 20px;
+    font-size: 1.11111rem;
+  }
+}
+
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
@@ -1616,7 +1665,7 @@ h6 {
     height: 40px;
     position: absolute;
     right: 1em;
-    top: 1.2em;
+    top: .5em;
     text-indent: -9999px;
     border: none;
     background: url("../../../img/icon-menu.svg") center center no-repeat #fff;
@@ -1859,7 +1908,7 @@ h6 {
 @media only screen and (min-width: 61em) and (max-width: 75em) {
   .site-main {
     padding: 1em 1em;
-    min-height: 540px;
+    min-height: 630px;
   }
 }
 
@@ -2239,13 +2288,14 @@ h6 {
   text-align: left;
   padding: 0.8em 1em;
   color: #fff;
-  min-height: 392px;
+  margin-bottom: 0.25em;
 }
 
 .block__sidebar .entry-title--news {
   padding-bottom: 0.25em;
   border-bottom: 2px solid #fff;
   text-transform: uppercase;
+  color: #353535;
   font-size: 18px;
   font-size: 1rem;
 }
@@ -2264,49 +2314,70 @@ h6 {
   margin-bottom: 0.75em;
 }
 
-.block__sidebar .block--article__news .entry-title {
+.block__sidebar .entry-title {
   margin-bottom: 0;
   font-family: 'ralewaymedium';
   font-size: 16px;
   font-size: 0.88889rem;
 }
 
-.block__sidebar .block--article__news .entry-date {
+.block__sidebar .entry-date {
   font-size: 14px;
   font-size: 0.77778rem;
 }
 
-.block__sidebar .block--article__news .entry-content {
+.block__sidebar .entry-content {
   margin: 0.25em 0 0;
 }
 
-.block__sidebar .block--article__news .entry-content p {
+.block__sidebar .entry-content p {
   margin: 0;
 }
 
-.block__sidebar .block--article__news .entry-content a {
+.block__sidebar .entry-content a {
   text-decoration: underline;
-  color: #fff;
+  font-size: 0.75em;
 }
 
-.block__sidebar .block--article__news .read-more {
+.block__sidebar .read-more {
   color: #4d4d4d;
   text-decoration: underline;
   font-size: 12px;
   font-size: 0.66667rem;
 }
 
+.block__sidebar a {
+  color: #fff;
+}
+
+.block__sidebar a:hover {
+  text-decoration: underline;
+}
+
+.block__news-apply .entry-title--news,
+.block__news-learn .entry-title--news {
+  margin-bottom: .55rem;
+}
+
+.block__news-apply .entry-list--news,
+.block__news-learn .entry-list--news {
+  margin: 0 0 0 1em;
+}
+
+.block__news-apply {
+  padding-bottom: .8em;
+}
+
 .block__apply {
   display: block;
   width: 100%;
-  margin-bottom: 0.25em;
+  padding: 0.5em 0;
   background: #4d4d4d;
 }
 
 .block__apply .bt_apply {
   position: relative;
   display: block;
-  padding: 0.5em 0;
   text-transform: uppercase;
   color: #fff;
   font-family: 'ralewaymedium';
@@ -2358,16 +2429,46 @@ h6 {
   }
 }
 
-.block__apply .bt_apply:hover {
-  background: #6c6c6c;
+.block__apply .bt_apply--deadline {
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'ralewaymedium';
+  -webkit-transition: 0.1s all linear;
+  transition: 0.1s all linear;
+  font-size: 20px;
+  font-size: 1.11111rem;
 }
 
-.block__apply .bt_apply:hover::before {
+@media only screen and (min-width: 44em) and (max-width: 61em) {
+  .block__apply .bt_apply--deadline {
+    text-align: left;
+    padding-left: 2.5em;
+  }
+}
+
+@media (max-width: 44em) {
+  .block__apply .bt_apply--deadline {
+    text-align: left;
+    padding-left: 2.5em;
+  }
+}
+
+.block__apply--red {
+  background: #FF0000;
+}
+
+.block__apply--red:hover .bt_apply::before {
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
   -webkit-transform: translate(0.5em, -50%);
   -ms-transform: translate(0.5em, -50%);
   transform: translate(0.5em, -50%);
+}
+
+.block__apply--red a:hover {
+  text-decoration: none;
 }
 
 .block__central--news .entry-header__global {
@@ -2406,7 +2507,7 @@ h6 {
 
 .home .site-main {
   max-width: 1440px;
-  padding: 3.5em 2em 3.5em 0;
+  padding: 1.5em 2em 1.5em 0;
 }
 
 @media only screen and (min-width: 61em) and (max-width: 75em) {
@@ -2921,7 +3022,7 @@ h6 {
 }
 
 .block__link--university:hover {
-  background: #d8d8d8;
+  background: #d9d9d9;
 }
 
 .block__link--university a {

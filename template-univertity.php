@@ -18,6 +18,10 @@ get_header(); ?>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
+					<header class="entry-header">
+						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					</header><!-- .entry-header -->								
+
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 						<?php
@@ -45,6 +49,11 @@ get_header(); ?>
 
 					</article><!-- #post-## -->
 
+					<?php wp_reset_postdata(); //we stop the universityes query?>
+
+					<div class="entry-content">
+						<?php the_content(); ?>
+					</div><!-- .entry-content -->
 
 				<?php endwhile; // end of the loop. ?>
 

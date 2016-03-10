@@ -14,9 +14,6 @@
 		<div class="site-info">
 
 			<div class="site-info__erasmus">
-				<a href="http://eacea.ec.europa.eu/erasmus_mundus/" target="_blank">
-					<img src="<?php bloginfo('template_directory'); ?>/img/logo-erasmus.svg"  alt="Logo Erasmus Mundus" />
-				</a>
 			</div><!--
 				  
 			--><div class="site-info__menu">

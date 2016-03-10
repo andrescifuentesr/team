@@ -41,6 +41,16 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'team' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+		
+		<section class="site-top_bar">
+			<a href="http://eacea.ec.europa.eu/erasmus_mundus/" target="_blank" class="site-top_bar__erasmus" >
+				<img src="<?php bloginfo('template_directory'); ?>/img/logo-erasmus.svg"  alt="Logo Erasmus Mundus" />
+			</a><!--
+		--><h2 class="site-top_bar__legend">
+				<?php _e( 'Funded mobilities within a network of excellence in ICT between Europe, Japan and Korea','team') ?>
+			</h2>
+		</section>
+
 		<div class="site-branding">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</div>

@@ -5,7 +5,7 @@
 	.site-main {
 		// max-width:1400px;
 		max-width:1440px;
-		padding: 3.5em 2em 3.5em 0;
+		padding: 1.5em 2em 1.5em 0;
 		@include mq(lap) { padding: 1.5em 1em; }
 		@include mq(tablet) { padding: 0.5em 0.5em 1em; }
 		@include mq(phone) { padding: 0.5em 0.5em 1.5em; }
