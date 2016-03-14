@@ -8,11 +8,11 @@
 	position: relative;
 	padding: 1.5em 2em;
 	width: 100%;
-	min-height: 627px;
+	min-height: 675px;
 	height:100%;
 	max-width:1440px;
 	margin: 0 auto;
-	@include mq(lap) { padding: 1em 1em; min-height: 630px;  }
+	@include mq(lap) { padding: 1em 1em; /*min-height: 630px;*/  }
 	@include mq(tablet) { padding: 1em 1em; min-height: 500px; }
 	@include mq(phone) { padding: 1.5em 0.5em; }
 

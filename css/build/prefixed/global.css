@@ -1899,7 +1899,7 @@ h6 {
   position: relative;
   padding: 1.5em 2em;
   width: 100%;
-  min-height: 627px;
+  min-height: 675px;
   height: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -1908,7 +1908,7 @@ h6 {
 @media only screen and (min-width: 61em) and (max-width: 75em) {
   .site-main {
     padding: 1em 1em;
-    min-height: 630px;
+    /*min-height: 630px;*/
   }
 }
 

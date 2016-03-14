@@ -22,7 +22,7 @@
 		
 			<article class="block--article__news">
 				<header class="entry-header">
-					<!-- <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?> -->
+					<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 					<span class="entry-date"><?php the_time('j/m/Y'); ?></span>
 				</header>
 				<div class="entry-content">
@@ -48,11 +48,11 @@
 					</a>
 				</li>
 				<li>
-					<a href="<?php echo esc_url( __( 'http://www.team-mundus.eu/wp-content/uploads/2016/03/TEAM-application-instructions.pdf', 'team' ) ); ?>"><?php _e( 'Application instructions', 'team' ); ?>
+					<a target="_blank" href="<?php echo esc_url( __( 'http://www.team-mundus.eu/wp-content/uploads/2016/03/TEAM-application-instructions.pdf', 'team' ) ); ?>"><?php _e( 'Application instructions', 'team' ); ?>
 					</a>
 				</li>
 				<li>
-					<a href="<?php echo esc_url( __( 'https://emecw.gis.lu.se/apply/?lot=TEAM', 'team' ) ); ?>"><?php _e( 'Online application portal', 'team' ); ?>
+					<a target="_blank" href="<?php echo esc_url( __( 'https://emecw.gis.lu.se/apply/?lot=TEAM', 'team' ) ); ?>"><?php _e( 'Online application portal', 'team' ); ?>
 					</a>					
 				</li>
 			</ul>
