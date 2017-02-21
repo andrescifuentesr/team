@@ -48,7 +48,7 @@
 					</a>
 				</li>
 				<li>
-					<a target="_blank" href="<?php echo esc_url( __( 'http://www.team-mundus.eu/wp-content/uploads/2016/03/TEAM-application-instructions.pdf', 'team' ) ); ?>"><?php _e( 'Application instructions', 'team' ); ?>
+					<a target="_blank" href="<?php echo esc_url( __( 'http://www.team-mundus.eu/wp-content/uploads/2016/09/TEAM-application-instructions.pdf', 'team' ) ); ?>"><?php _e( 'Application instructions', 'team' ); ?>
 					</a>
 				</li>
 				<li>
@@ -70,7 +70,7 @@
 					</a>					
 				</li>
 				<li>
-					<a href="<?php echo esc_url( __( get_permalink(588), 'team' ) ); ?>"><?php _e( 'Profile of our Scholarship Holders', 'team' ); ?>
+					<a href="<?php echo esc_url( __( get_permalink(11), 'team' ) ); ?>"><?php _e( 'Profile of our Scholarship Holders', 'team' ); ?>
 					</a>					
 				</li>
 			</ul>
@@ -81,7 +81,7 @@
 
 	<div class="block__apply block__apply--red">
 		<?php printf( __( '<a href="%1$s" target="_blank">
-			<div class="bt_apply">Apply Now </div><div class="bt_apply--deadline">Deadline: 25/04/2016</div></a>', 'team' ), "https://emecw.gis.lu.se/apply/?lot=TEAM" ); ?>
+			<div class="bt_apply">Apply Now </div><div class="bt_apply--deadline">Deadline: 15/05/2017</div></a>', 'team' ), "https://emecw.gis.lu.se/apply/?lot=TEAM" ); ?>
 	</div>
 
 </section>
