@@ -48,7 +48,7 @@
 					</a>
 				</li>
 				<li>
-					<a target="_blank" href="<?php echo esc_url( __( 'http://www.team-mundus.eu/wp-content/uploads/2016/09/TEAM-application-instructions.pdf', 'team' ) ); ?>"><?php _e( 'Application instructions', 'team' ); ?>
+					<a target="_blank" href="<?php echo esc_url( __( 'http://www.team-mundus.eu/wp-content/uploads/2017/03/TEAM-application-instructions_C3-2ndcall.pdf', 'team' ) ); ?>"><?php _e( 'Application instructions', 'team' ); ?>
 					</a>
 				</li>
 				<li>
