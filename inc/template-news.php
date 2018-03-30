@@ -48,7 +48,7 @@
 					</a>
 				</li>
 				<li>
-					<a target="_blank" href="<?php echo esc_url( __( 'http://www.team-mundus.eu/wp-content/uploads/2017/03/TEAM-application-instructions_C3-2ndcall.pdf', 'team' ) ); ?>"><?php _e( 'Application instructions', 'team' ); ?>
+					<a target="_blank" href="<?php echo esc_url( __( 'http://www.team-mundus.eu/wp-content/uploads/2017/04/TEAM-application-instructions_C3_2nd-call.pdf', 'team' ) ); ?>"><?php _e( 'Application instructions', 'team' ); ?>
 					</a>
 				</li>
 				<li>
@@ -79,9 +79,9 @@
 	</div><!-- .block__news -->
 
 
-	<div class="block__apply block__apply--red">
+<!-- 	<div class="block__apply block__apply--red">
 		<?php printf( __( '<a href="%1$s" target="_blank">
-			<div class="bt_apply">Apply Now </div><div class="bt_apply--deadline">Deadline: 15/05/2017</div></a>', 'team' ), "https://emecw.gis.lu.se/apply/?lot=TEAM" ); ?>
+			<div class="bt_apply">Apply Now </div><div class="bt_apply--deadline">Deadline: 02/10/2017</div></a>', 'team' ), "https://emecw.gis.lu.se/apply/?lot=TEAM" ); ?>
 	</div>
-
+ -->
 </section>
